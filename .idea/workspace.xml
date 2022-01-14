@@ -54,7 +54,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../third-sprint/russian-travel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,8 +72,16 @@
       <updated>1642186520372</updated>
       <workItem from="1642186522160" duration="588000" />
       <workItem from="1642189911928" duration="14000" />
-      <workItem from="1642189927011" duration="52000" />
+      <workItem from="1642189927011" duration="1444000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;12&quot;">
+      <created>1642190352785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642190352785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,14 +111,18 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;12&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;12&quot;" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1642189924663">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1642190535528">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642189924663" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1642189939328">
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642190535528" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1642190362757">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642189939328" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642190362757" />
   </component>
 </project>
