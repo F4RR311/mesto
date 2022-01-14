@@ -27,17 +27,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/element/__title/element__title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/elements/elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__heart/element__heart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bridge.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/bridge.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/develop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/develop.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dombay.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/elbrus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/karachevsk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/winter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/winter.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/element/__image/element__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/element/__title/element__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__title/element__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/__info/profile__info.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__info/profile__info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
@@ -88,7 +86,7 @@
       <updated>1642186520372</updated>
       <workItem from="1642186522160" duration="588000" />
       <workItem from="1642189911928" duration="14000" />
-      <workItem from="1642189927011" duration="4430000" />
+      <workItem from="1642189927011" duration="7887000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
