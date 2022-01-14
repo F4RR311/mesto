@@ -27,8 +27,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__title/element__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/elements/elements.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bridge.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/bridge.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/develop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/develop.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dombay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/elbrus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/karachevsk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/winter.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,6 +58,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="23hVtVs62djfDCaDAL6Fm82e9Gn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +69,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../third-sprint/russian-travel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../first-sprint/how-to-learn" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,7 +88,7 @@
       <updated>1642186520372</updated>
       <workItem from="1642186522160" duration="588000" />
       <workItem from="1642189911928" duration="14000" />
-      <workItem from="1642189927011" duration="1444000" />
+      <workItem from="1642189927011" duration="4430000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -116,10 +132,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="&quot;12&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1642190535528">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1642193226873">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642190535528" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642193226873" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1642190362757">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
