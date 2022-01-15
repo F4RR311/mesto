@@ -26,19 +26,21 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:develop" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop/elements" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop/popup" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="&quot; &quot;">
-      <change afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="&quot; start popup&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_01_2022_23_57_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_01_2022_23_57_[Default_Changelist]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_01_2022_23_57__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/close-btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/save-btn.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__heart/element__heart.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__heart/element__heart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__title/element__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__title/element__title.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="23hVtVs62djfDCaDAL6Fm82e9Gn" />
@@ -65,6 +72,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -128,7 +136,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop/elements" />
+                        <option value="develop/popup" />
                       </list>
                     </value>
                   </entry>
@@ -145,16 +153,21 @@
     <MESSAGE value="&quot;12&quot;" />
     <MESSAGE value="&quot;шапка элементы&quot;" />
     <MESSAGE value="&quot; &quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot; &quot;" />
+    <MESSAGE value="&quot; start popup&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot; start popup&quot;" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="714" y="340" key="#Notifications" timestamp="1642281220818">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="714" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642281220818" />
     <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1642272367310">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642272367310" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1642202068054">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1642281215482">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642202068054" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642281215482" />
   </component>
 </project>
