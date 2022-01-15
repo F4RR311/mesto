@@ -1,0 +1,7 @@
+.element__heart {
+    padding-right: 20px;
+}
+.element__heart:hover {
+    cursor: pointer;
+
+}

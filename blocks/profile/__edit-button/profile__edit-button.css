@@ -1,10 +1,10 @@
 .profile__edit-button {
     position: relative;
-    margin: 0 auto 0 18px;
+    width: 24px;
+    height: 24px;
     background-color: black;
     border: none;
     padding: 0;
-
 
 
 }
@@ -17,10 +17,8 @@
 
 @media (max-width: 767px) {
     .profile__edit-button {
-        margin: 0;
-        position: absolute;
-        right: 38px;
-        top: 293px;
+
+
     }
 }
 
