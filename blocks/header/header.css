@@ -1,12 +1,11 @@
-.header{
+.header {
     max-width: 880px;
     margin: 45px auto 0;
     width: 100%;
 
 }
 
-
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .header {
         min-width: 319px;
         margin: 25px auto 0;

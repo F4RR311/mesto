@@ -8,3 +8,12 @@
     font-size: 18px;
     line-height: 22px;
 }
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 0;
+        grid-template-columns:1fr;
+        max-width: 282px;
+        margin: 45px auto auto;
+    }
+}

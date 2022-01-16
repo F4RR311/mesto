@@ -6,7 +6,6 @@
     background-image: url(../../../images/add-button.svg);
     background-size: cover;
 
-
 }
 
 .profile__add-button:hover {
@@ -21,6 +20,8 @@
         height: 50px;
         background-image: url(../../../images/add-button-320.svg);
         background-repeat: no-repeat;
+        background-size: cover;
+        border-right: 1px solid #fff;
     }
 }
 
