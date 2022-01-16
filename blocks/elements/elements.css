@@ -7,3 +7,10 @@
     grid-column-gap: 17px;
 
 }
+@media (max-width: 767px) {
+    .elements {
+        grid-template-columns:1fr;
+        max-width: 282px;
+        margin: 35px auto auto;
+    }
+}

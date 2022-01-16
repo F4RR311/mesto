@@ -15,55 +15,59 @@
 </header>
 <main>
     <section class="profile">
-        <img class="profile__avatar" src="images/kusto.jpg">
+        <img class="profile__avatar" src="images/kusto.jpg" alt="кусто">
         <div class="profile__info">
-            <p class="profile__title">Жак-Ив Кусто
-                <button class="profile__edit-button">
-                    <img class="profile__button-edit-img" src="images/edit-button.svg">
-                </button>
-            </p>
+            <div class="profile__info-edit-wrap">
+                <h1 class="profile__title">Жак-Ив Кусто </h1>
+                <button class="profile__edit-button"></button>
+            </div>
             <p class="profile__description">Исследователь океана</p>
         </div>
-        <button class="profile__add-button"><img class="profile__button-add-img"/></button>
+        <button class="profile__add-button"></button>
     </section>
     <section class="elements">
         <article class="element">
             <img class="element__image" src="images/bridge.jpg" alt="мост"/>
-            <h2 class="element__title">Мост<img class="element__heart" src="images/liked-heart.svg"/></h2>
+            <h2 class="element__title">Мост<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
         </article>
         <article class="element">
             <img class="element__image" src="images/winter.jpg" alt="зима"/>
-            <h2 class="element__title">Зима<img class="element__heart" src="images/liked-heart.svg"/></h2>
+            <h2 class="element__title">Зима<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
         </article>
         <article class="element">
-            <img class="element__image" src="images/develop.jpg" alt="коса"/>
-            <h2 class="element__title">Разработка<img class="element__heart" src="images/liked-heart.svg"/></h2>
+            <img class="element__image" src="images/develop.jpg" alt="разработка"/>
+            <h2 class="element__title">Разработка<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/>
+            </h2>
         </article>
         <article class="element">
             <img class="element__image" src="images/winter.jpg" alt="зима"/>
-            <h2 class="element__title">Зима<img class="element__heart" src="images/liked-heart.svg"/></h2>
+            <h2 class="element__title">Зима<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
         </article>
         <article class="element">
             <img class="element__image" src="images/bridge.jpg" alt="мост"/>
-            <h2 class="element__title">Мост<img class="element__heart" src="images/liked-heart.svg"/></h2>
+            <h2 class="element__title">Мост<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
         </article>
 
         <article class="element">
-            <img class="element__image" src="images/develop.jpg" alt="коса"/>
-            <h2 class="element__title">Разработка<img class="element__heart" src="images/liked-heart.svg"/></h2>
+            <img class="element__image" src="images/develop.jpg" alt="разработка"/>
+            <h2 class="element__title">Разработка<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/>
+            </h2>
         </article>
     </section>
 </main>
+
 <footer class="footer">
     <p class="footer__copyright">&copy; 2021. Леонтьев Валерий</p>
 </footer>
-<section class="popup">
-    <div class="popup__container">
-        <input class="popup__input" />
+<div class="popup ">
+    <form class="popup__container">
+        <button class="popup__close" type="button" aria-label="close"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
         <input class="popup__input"/>
-        <button class="popup__button" type="submit"></button>
-
-    </div>
-</section>
+        <input class="popup__input"/>
+        <button class="popup__button-save" type="submit">Сохранить</button>
+    </form>
+</div>
+<script src="scripts/index.js"></script>
 </body>
-</html>
+</html>`
