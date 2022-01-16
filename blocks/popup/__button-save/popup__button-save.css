@@ -1,8 +1,8 @@
-.popup__button-save{
+.popup__button-save {
     background-image: url(../../../images/save-btn.svg);
     border: none;
     width: 358px;
-   margin-top: 45px;
+    margin-top: 45px;
     height: 50px;
     color: white;
     cursor: pointer;
