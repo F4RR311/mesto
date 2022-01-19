@@ -11,7 +11,7 @@
 <body class="page">
 <header class="header">
     <img class="header__logo" src="images/mesto-logo.svg" alt="лого"/>
-    <p class="header__line"></p>
+
 </header>
 <main>
     <section class="profile">
@@ -19,39 +19,44 @@
         <div class="profile__info">
             <div class="profile__info-edit-wrap">
                 <h1 class="profile__title">Жак-Ив Кусто </h1>
-                <button class="profile__edit-button"></button>
+                <button class="profile__edit-button" type="button"></button>
             </div>
             <p class="profile__description">Исследователь океана</p>
         </div>
-        <button class="profile__add-button"></button>
+        <button class="profile__add-button" type="button"></button>
     </section>
     <section class="elements">
         <article class="element">
             <img class="element__image" src="images/bridge.jpg" alt="мост"/>
-            <h2 class="element__title">Мост<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
+            <h2 class="element__title">Мост в загадочном месте</h2>
+            <button class="element__heart" type="button"></button>
+
         </article>
         <article class="element">
             <img class="element__image" src="images/winter.jpg" alt="зима"/>
-            <h2 class="element__title">Зима<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
+            <h2 class="element__title">Зима</h2>
+            <button class="element__heart" type="button"></button>
         </article>
         <article class="element">
             <img class="element__image" src="images/develop.jpg" alt="разработка"/>
-            <h2 class="element__title">Разработка<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/>
-            </h2>
+            <h2 class="element__title">Разработка</h2>
+            <button class="element__heart" type="button"></button>
         </article>
         <article class="element">
             <img class="element__image" src="images/winter.jpg" alt="зима"/>
-            <h2 class="element__title">Зима<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
+            <h2 class="element__title">Зима</h2>
+            <button class="element__heart" type="button"></button>
         </article>
         <article class="element">
             <img class="element__image" src="images/bridge.jpg" alt="мост"/>
-            <h2 class="element__title">Мост<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/></h2>
+            <h2 class="element__title">Мост</h2>
+            <button class="element__heart" type="button"></button>
         </article>
 
         <article class="element">
             <img class="element__image" src="images/develop.jpg" alt="разработка"/>
-            <h2 class="element__title">Разработка<img class="element__heart" src="images/liked-heart.svg" alt="сердце"/>
-            </h2>
+            <h2 class="element__title">Разработка</h2>
+            <button class="element__heart" type="button"></button>
         </article>
     </section>
 </main>
@@ -60,13 +65,15 @@
     <p class="footer__copyright">&copy; 2021. Леонтьев Валерий</p>
 </footer>
 <div class="popup">
-    <form class="popup__container">
-        <button class="popup__close" type="button" aria-label="close"></button>
-        <h2 class="popup__title">Редактировать профиль</h2>
-        <input class="popup__item" id="first-name"/>
-        <input class="popup__item" id="job-input"/>
-        <button class="popup__button-save" type="submit">Сохранить</button>
-    </form>
+    <div class="popup__container">
+        <form name="popup-form">
+            <button class="popup__close" type="button" aria-label="close"></button>
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <input class="popup__item" id="first-name"/>
+            <input class="popup__item" id="job-input"/>
+            <button class="popup__button-save" type="submit">Сохранить</button>
+        </form>
+    </div>
 </div>
 <script src="scripts/index.js"></script>
 </body>
