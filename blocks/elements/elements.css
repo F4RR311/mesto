@@ -8,6 +8,12 @@
 
 
 }
+
+@media (max-width: 1023px) {
+    .elements {
+        max-width: 581px;
+    }
+}
 @media (max-width: 767px) {
     .elements {
         grid-template-columns:1fr;
