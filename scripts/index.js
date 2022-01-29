@@ -26,29 +26,6 @@ const cards = [
 ];
 
 
-
-
-
-
-cards.forEach((cardItem)=>{
-    renderCards(cardItem);
-})
-
-
-function renderCards(cardItem) {
-    const templateElement = document.querySelector('.element-template').content;
-    const placeElement = templateElement.cloneNode(true);
-    const elements = document.querySelector('.elements');
-    placeElement.querySelector('.element__image').src = cardItem.link;
-    placeElement.querySelector('.element__title').textContent = cardItem.name;
-
-    elements.prepend(placeElement);
-
-}
-
-
-
-renderCards();
 let profileOpenPopupButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
 let popupCloseButton = document.querySelector('.popup__close');
@@ -63,6 +40,44 @@ let cardAddOpenPopupButton = document.querySelector('.profile__add-button');
 let cardClosePopupButton = document.querySelector('.popup__close_card');
 let popupCard = document.querySelector('.popup_card');
 
+// Доступ к временным элементам
+let templateElement = document.querySelector('.element-template').content;
+let elements = document.querySelector('.elements');
+
+let buttonElementHeart = document.querySelector('.element__button-heart')
+
+
+
+function renderCards(cardItem) {
+
+
+    const placeElement = templateElement.cloneNode(true);
+
+    placeElement.querySelector('.element__image').src = cardItem.link;
+    placeElement.querySelector('.element__title').textContent = cardItem.name;
+
+    addListeners(placeElement);
+    elements.append(placeElement);
+
+
+}
+
+function deleteCard(e){
+    e.target.closest('.element').remove();
+}
+
+function likedCard(e){
+    e.target.classList.toggle('element__button-heart_liked');
+
+
+}
+
+function addListeners(cardElement) {
+    cardElement.querySelector('.element__delete-button').addEventListener('click', deleteCard);
+   cardElement.querySelector('.element__button-heart').addEventListener('click', likedCard );
+}
+
+
 
 function openPopup() {
     popup.classList.add('popup_opened');
@@ -72,14 +87,12 @@ function openPopup() {
 
 function openPopupCard() {
     popupCard.classList.add('popup_opened');
-
 }
 
 
 function closePopup() {
     popup.classList.remove('popup_opened');
     popupCard.classList.remove('popup_opened');
-
 }
 
 popup.addEventListener('click', function (e) {
@@ -109,3 +122,6 @@ profileOpenPopupButton.addEventListener('click', openPopup);
 popupCloseButton.addEventListener('click', closePopup);
 formElement.addEventListener('submit', formSubmitHandler);
 
+cards.forEach((cardItem) => {
+    renderCards(cardItem);
+})

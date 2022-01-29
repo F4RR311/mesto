@@ -26,16 +26,19 @@
         <button class="profile__add-button" type="button"></button>
     </section>
     <section class="elements">
-
-
+        <template class="element-template">
+            <article class="element">
+                <button class="element__delete-button" type="button"></button>
+                <img class="element__image" alt="фоновая картинка"/>
+                <h2 class="element__title"></h2>
+                <button class="element__button-heart" type="button" aria-label="Нравится"></button>
+            </article>
+        </template>
     </section>
 </main>
-
 <footer class="footer">
     <p class="footer__copyright">&copy; 2022. Леонтьев Валерий</p>
-
 </footer>
-
 <div class="popup">
     <div class="popup__container">
         <button class="popup__close" type="button" aria-label="close"></button>
@@ -60,14 +63,6 @@
     </div>
 </div>
 
-<template class="element-template">
-<article class="element">
-    <button class="element__delete-button" type="button"></button>
-    <img class="element__image"  alt="фоновая картинка"/>
-    <h2 class="element__title"></h2>
-    <button class="element__heart" type="button" aria-label="Нравится"></button>
-</article>
-</template>
 
 <script src="scripts/index.js"></script>
 </body>
