@@ -1,4 +1,4 @@
-const initialCards = [
+const cards = [
     {
         name: 'Архыз',
         link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
@@ -25,6 +25,30 @@ const initialCards = [
     }
 ];
 
+
+
+
+
+
+cards.forEach((cardItem)=>{
+    renderCards(cardItem);
+})
+
+
+function renderCards(cardItem) {
+    const templateElement = document.querySelector('.element-template').content;
+    const placeElement = templateElement.cloneNode(true);
+    const elements = document.querySelector('.elements');
+    placeElement.querySelector('.element__image').src = cardItem.link;
+    placeElement.querySelector('.element__title').textContent = cardItem.name;
+
+    elements.prepend(placeElement);
+
+}
+
+
+
+renderCards();
 let profileOpenPopupButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
 let popupCloseButton = document.querySelector('.popup__close');
