@@ -25,8 +25,7 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:feature/page" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -36,6 +35,8 @@
       <change beforePath="$PROJECT_DIR$/images/bridge.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/develop.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/winter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <list id="eef4bb97-aef5-44c7-82bd-31f17d066d8f" name="new develop1" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +286,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/page" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

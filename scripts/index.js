@@ -30,8 +30,8 @@ const cards = [
 let profileOpenPopupButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
 let popupCloseButton = document.querySelector('.popup__close');
-let nameInput = document.querySelector('.popup__input_first_name');
-let jobInput = document.querySelector('.popup__input_job');
+let nameInput = document.querySelector('.popup__input-first-name');
+let jobInput = document.querySelector('.popup__input-job');
 let profileTitle = document.querySelector('.profile__title');
 let profileDescription = document.querySelector('.profile__description');
 let formElement = document.querySelector('.popup__form');
@@ -40,8 +40,8 @@ let formElement = document.querySelector('.popup__form');
 let cardAddOpenPopupButton = document.querySelector('.profile__add-button');
 let cardClosePopupButton = document.querySelector('.popup__close_card');
 let popupCard = document.querySelector('.popup_card');
-let placeNameInput = document.querySelector('.popup__input_name');
-let placeLinkInput = document.querySelector('.popup__input_link');
+let placeNameInput = document.querySelector('.popup__input-name');
+let placeLinkInput = document.querySelector('.popup__input-link');
 let formElementCards = document.querySelector('.popup__form_card');
 
 
