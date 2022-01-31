@@ -1,5 +1,7 @@
 .popup__image-fiqure{
     margin-top: 10px;
+    max-height: 75vh;
+    max-width: 75vw;
     font-size: 12px;
     line-height: 15px;
     color: white;

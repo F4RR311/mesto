@@ -30,13 +30,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="add card finish">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="fix auto-test bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__image-fiqure/popup__image-fiqure.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__image-fiqure/popup__image-fiqure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__image/popup__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__image/popup__image-card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+    </list>
+    <list id="1b1a4fa5-fee7-4f94-9ae7-9137bdac6b87" name="fix aute-test bugs" comment="">
       <change beforePath="$PROJECT_DIR$/images/bridge.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/develop.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/winter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <list id="eef4bb97-aef5-44c7-82bd-31f17d066d8f" name="new develop1" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +79,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Projects ReactJavaScriprt/Pizza" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-b0fadeb7bee7a19af55b5fc3df5cd25fcb468bce" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -121,6 +126,8 @@
       <workItem from="1643449955975" duration="1752000" />
       <workItem from="1643464551048" duration="1273000" />
       <workItem from="1643466911976" duration="29732000" />
+      <workItem from="1643501398894" duration="36000" />
+      <workItem from="1643652535515" duration="13786000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -269,7 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643499212045</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix aute-test bugs">
+      <created>1643500811811</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1643500811811</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix auto-test bugs">
+      <created>1643500875270</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1643500875270</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,18 +341,20 @@
     <MESSAGE value="like functional" />
     <MESSAGE value="popup image functional" />
     <MESSAGE value="add card finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="add card finish" />
+    <MESSAGE value="fix aute-test bugs" />
+    <MESSAGE value="fix auto-test bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix auto-test bugs" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="714" y="340" key="#Notifications" timestamp="1642281220818">
+    <state x="714" y="340" key="#Notifications" timestamp="1643652610930">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="714" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1642281220818" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1643479248043">
+    <state x="714" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643652610930" />
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1643657185924">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1642354554503" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643479248043" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643657185924" />
     <state width="1658" height="214" key="GridCell.Tab.0.bottom" timestamp="1643408701120">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -348,15 +371,15 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1658" height="214" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643408701120" />
-    <state x="807" y="429" key="VCS.ChangelistChooser" timestamp="1643402043931">
+    <state x="807" y="429" key="VCS.ChangelistChooser" timestamp="1643500837171">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643402043931" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1643499216265">
+    <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1643500881579">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643499216265" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500881579" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
