@@ -54,7 +54,7 @@
 <div class="popup popup_card">
     <div class="popup__container">
         <button class="popup__close popup__close_card" id="popup__close_card" type="button" aria-label="close"></button>
-        <form class="popup__form_card" name="popup-card-form">
+        <form class="popup__form_card">
             <h2 class="popup__title">Новое место</h2>
             <input class="popup__item popup__input-name" name="name" placeholder="Название"/>
             <input class="popup__item popup__input-link" name="link" placeholder="Ссылка на картинку"/>
@@ -64,18 +64,15 @@
 </div>
 <div class="popup popup_image">
     <div class="popup__image-container">
-
-
+        <button class="popup__close popup__close-image"
+                type="button" aria-label="Закрыть"></button>
+        <figure class="popup__image-fiqure">
+            <img class="popup__image" alt="">
+            <figcaption class="popup__image-name"></figcaption>
+        </figure>
     </div>
 </div>
-<template class="popup__image-template">
-    <button class="popup__close popup__close-image"
-            type="button" aria-label="Закрыть"></button>
-    <figure class="popup__image-fiqure">
-        <img class="popup__image">
-        <figcaption class="popup__image-name"></figcaption>
-    </figure>
-</template>
+
 <script src="scripts/index.js"></script>
 </body>
 </html>
