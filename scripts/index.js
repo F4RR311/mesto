@@ -34,7 +34,7 @@ const nameInput = document.querySelector('.popup__input-first-name');
 const jobInput = document.querySelector('.popup__input-job');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__description');
-const formElement = document.querySelector('.popup__form_profile');
+const formElement = document.querySelector('.popup__form-profile');
 
 //Форма попапа карточек
 const cardAddOpenPopupButton = document.querySelector('.profile__add-button');
@@ -42,7 +42,7 @@ const cardClosePopupButton = document.querySelector('.popup__close_card');
 const popupCard = document.querySelector('.popup_card');
 const placeNameInput = document.querySelector('.popup__input-name');
 const placeLinkInput = document.querySelector('.popup__input-link');
-const formElementCards = document.querySelector('.popup__form_card');
+const formElementCards = document.querySelector('.popup__form-card');
 
 // Доступ к временным элементам
 const templateElement = document.querySelector('.elements-template').content;
