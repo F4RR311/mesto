@@ -30,9 +30,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="auto-test-bugs -- fix">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="review fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <list id="1b1a4fa5-fee7-4f94-9ae7-9137bdac6b87" name="fix aute-test bugs" comment="">
@@ -128,7 +127,8 @@
       <workItem from="1643740016178" duration="10852000" />
       <workItem from="1643751636783" duration="234000" />
       <workItem from="1643751990633" duration="593000" />
-      <workItem from="1643777779931" duration="1041000" />
+      <workItem from="1643777779931" duration="1795000" />
+      <workItem from="1643815577365" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -312,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643751753483</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="review fix">
+      <created>1643778844021</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1643778844021</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +350,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;12&quot;" />
     <MESSAGE value="&quot;шапка элементы&quot;" />
     <MESSAGE value="&quot; &quot;" />
     <MESSAGE value="&quot; start popup&quot;" />
@@ -368,7 +374,8 @@
     <MESSAGE value="some review fix" />
     <MESSAGE value="finish fix" />
     <MESSAGE value="auto-test-bugs -- fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto-test-bugs -- fix" />
+    <MESSAGE value="review fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="review fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="714" y="340" key="#Notifications" timestamp="1643652610930">
@@ -400,11 +407,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1643751754749">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1643778847084">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643751754749" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643778847084" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>

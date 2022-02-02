@@ -54,6 +54,7 @@ const buttonElementHeart = document.querySelector('.element__button-heart');
 
 //Получаем доступ к попапу всплывающей картинки
 const popupImage = document.querySelector('.popup_image');
+const popupPhotosImage = document.querySelector('.popup__image');
 const popupButtonCloseImage = document.querySelector('.popup__close-image');
 
 function createCard(cardItem) {
@@ -73,7 +74,6 @@ function renderCard() {
 }
 
 function addPopupImage(e) {
-    const popupPhotosImage = document.querySelector('.popup__image');
     popupPhotosImage.src = e.target.src;
     popupPhotosImage.alt = e.target.alt;
     popupImage.querySelector('.popup__image-name').textContent = e.target.alt;
@@ -89,10 +89,8 @@ function likedCard(e) {
 }
 
 function openPopup(popup) {
-
     popup.classList.add("popup_opened");
-        nameInput.value = profileTitle.textContent;
-        jobInput.value = profileDescription.textContent;
+
 }
 
 function closePopup(popup) {
@@ -127,7 +125,10 @@ function addPlaceSubmitHandler(evt) {
 }
 
 profileOpenPopupButton.addEventListener('click', () => {
+    nameInput.value = profileTitle.textContent;
+    jobInput.value = profileDescription.textContent;
     openPopup(popupProfile);
+
 });
 cardAddOpenPopupButton.addEventListener('click', () => {
     openPopup(popupCard);
