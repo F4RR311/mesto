@@ -27,6 +27,7 @@ const cards = [
 ];
 
 //Форма попапа профиля
+
 const profileOpenPopupButton = document.querySelector('.profile__edit-button');
 const popupProfile = document.querySelector('.popup_profile');
 const popupCloseButton = document.querySelector('.popup__close');
@@ -76,7 +77,7 @@ function addPopupImage(e) {
     popupPhotosImage.src = e.target.src;
     popupPhotosImage.alt = e.target.alt;
     popupImage.querySelector('.popup__image-name').textContent = e.target.alt;
-    togglePopup(popupImage);
+    openPopup(popupImage);
 }
 
 function deleteCard(e) {
@@ -87,19 +88,15 @@ function likedCard(e) {
     e.target.classList.toggle('element__button-heart_liked');
 }
 
-function togglePopup(popup) {
+function openPopup(popup) {
 
-    if (popup.classList.contains("popup_opened") === false) {
+    popup.classList.add("popup_opened");
         nameInput.value = profileTitle.textContent;
         jobInput.value = profileDescription.textContent;
-    }
-    popup.classList.toggle("popup_opened");
 }
 
 function closePopup(popup) {
-    if (popup.classList.contains("popup_opened") === true) {
-        popup.classList.remove("popup_opened");
-    }
+    popup.classList.remove('popup_opened');
 }
 
 function addListeners(cardElement) {
@@ -130,10 +127,10 @@ function addPlaceSubmitHandler(evt) {
 }
 
 profileOpenPopupButton.addEventListener('click', () => {
-    togglePopup(popupProfile);
+    openPopup(popupProfile);
 });
 cardAddOpenPopupButton.addEventListener('click', () => {
-    togglePopup(popupCard);
+    openPopup(popupCard);
 });
 
 popupCloseButton.addEventListener('click', () => {
