@@ -55,6 +55,7 @@ const buttonElementHeart = document.querySelector('.element__button-heart');
 //Получаем доступ к попапу всплывающей картинки
 const popupImage = document.querySelector('.popup_image');
 const popupPhotosImage = document.querySelector('.popup__image');
+const popupImageName = document.querySelector('.popup__image-name');
 const popupButtonCloseImage = document.querySelector('.popup__close-image');
 
 function createCard(cardItem) {
@@ -76,7 +77,7 @@ function renderCard() {
 function addPopupImage(e) {
     popupPhotosImage.src = e.target.src;
     popupPhotosImage.alt = e.target.alt;
-    popupImage.querySelector('.popup__image-name').textContent = e.target.alt;
+    popupImageName.textContent = e.target.alt;
     openPopup(popupImage);
 }
 
