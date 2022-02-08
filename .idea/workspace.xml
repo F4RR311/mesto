@@ -20,10 +20,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="css errors">
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__button/_disabled/popup__button_disabled.css" afterDir="false" />
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="JS 70%">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-save/popup__button-save.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__form-field/popup__form-field.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__form-field/popup__form-field.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__input-error/popup__input-error.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input-error/popup__input-error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -131,7 +133,7 @@
       <workItem from="1644074135237" duration="16000" />
       <workItem from="1644258631593" duration="114000" />
       <workItem from="1644258753192" duration="7626000" />
-      <workItem from="1644340143756" duration="10927000" />
+      <workItem from="1644340143756" duration="15806000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -357,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644349992881</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="JS 70%">
+      <created>1644356109464</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1644356109464</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +385,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mobile" />
     <MESSAGE value="final" />
     <MESSAGE value="fix auto test" />
     <MESSAGE value="finish script+popup" />
@@ -401,7 +409,8 @@
     <MESSAGE value="initial" />
     <MESSAGE value="верстка филдов" />
     <MESSAGE value="css errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="css errors" />
+    <MESSAGE value="JS 70%" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS 70%" />
   </component>
   <component name="WindowStateProjectService">
     <state x="839" y="412" key="#Custom_Plugin_Repositories" timestamp="1644258685530">
@@ -441,11 +450,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644349997200">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644356112970">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644349997200" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644356112970" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>

@@ -1,7 +1,7 @@
 const showInputError = (formElement,inputElement, errorMessage )=>{
 
     //находим элемент внутри функции
-    const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+    const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.add('popup__input-type-error');
     errorElement.textContent = errorMessage;
     errorElement.classList.add('popup__input-error_visible');
@@ -9,7 +9,7 @@ const showInputError = (formElement,inputElement, errorMessage )=>{
 };
 
 const hideInputError = (formElement, inputElement)=>{
-    const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+    const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.remove('popup__input-type-error');
     errorElement.classList.remove('popup__input-error_visible');
     errorElement.textContent = '';
