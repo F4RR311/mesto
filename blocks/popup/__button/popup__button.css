@@ -1,10 +1,11 @@
-.popup__button-save {
+.popup__button {
     background-image: url(../../../images/save-btn.svg);
     border: none;
     width: 358px;
     margin-top: 10px;
     height: 50px;
-    color: white;
+    color: #fff;
+    background-color: #000;
     cursor: pointer;
     font-weight: normal;
     font-size: 18px;
@@ -14,14 +15,14 @@
 
 }
 
-.popup__button-save:hover {
+.popup__button:hover {
     cursor: pointer;
     opacity: 0.8;
     transition: opacity 0.8s ease;
 }
 
 @media screen and (max-width: 767px) {
-    .popup__button-save {
+    .popup__button {
         font-size: 14px;
         /*margin-top: 10px;*/
         width: 238px;
