@@ -35,7 +35,7 @@ const nameInput = document.querySelector('.popup__input-first-name');
 const jobInput = document.querySelector('.popup__input-job');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__description');
-const formElement = document.querySelector('.popup__form-profile');
+const formElementProfile = document.querySelector('.popup__form-profile');
 
 //Форма попапа карточек
 const cardAddOpenPopupButton = document.querySelector('.profile__add-button');
@@ -146,7 +146,7 @@ popupButtonCloseImage.addEventListener('click', () => {
     closePopup(popupImage);
 });
 
-formElement.addEventListener('submit', editFormSubmitHandler);
+formElementProfile.addEventListener('submit', editFormSubmitHandler);
 formElementCards.addEventListener('submit', addPlaceSubmitHandler);
 
 renderCard();

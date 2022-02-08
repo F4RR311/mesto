@@ -30,15 +30,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="initial">
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__form-field/popup__form-field.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__input-type-error/popup__input-type-error.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__set/popup__set.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="верстка филдов">
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__input-error/_visible/popup__input-error_visible.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__input-error/popup__input-error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__overlay/popup__overlay.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-save/popup__button-save.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button-save/popup__button-save.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__input-type-error/popup__input-type-error.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/_type_error/popup__input_type_error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__item/popup__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
     </list>
     <list id="1b1a4fa5-fee7-4f94-9ae7-9137bdac6b87" name="fix aute-test bugs" comment="" />
     <list id="eef4bb97-aef5-44c7-82bd-31f17d066d8f" name="new develop1" comment="" />
@@ -85,6 +87,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto\blocks\popup\__input\_type_error" />
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto\blocks\popup\__input" />
       <recent name="C:\Yandex practicum\fourth-sprint\mesto\scripts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -140,7 +144,7 @@
       <workItem from="1644074135237" duration="16000" />
       <workItem from="1644258631593" duration="114000" />
       <workItem from="1644258753192" duration="7626000" />
-      <workItem from="1644340143756" duration="4574000" />
+      <workItem from="1644340143756" duration="6160000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -352,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644259422460</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="верстка филдов">
+      <created>1644348384969</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1644348384969</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +394,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавил стили+ позиционирование" />
     <MESSAGE value="popup script" />
     <MESSAGE value="mobile" />
     <MESSAGE value="final" />
@@ -408,7 +418,8 @@
     <MESSAGE value="review fix №3" />
     <MESSAGE value="review fix №4" />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="верстка филдов" />
+    <option name="LAST_COMMIT_MESSAGE" value="верстка филдов" />
   </component>
   <component name="WindowStateProjectService">
     <state x="839" y="412" key="#Custom_Plugin_Repositories" timestamp="1644258685530">
@@ -448,11 +459,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644259427139">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644348389081">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644259427139" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644348389081" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>

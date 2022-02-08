@@ -46,21 +46,20 @@
             <fieldset class="popup__set">
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <label class="popup__form-field">
-                    <input class="popup__item popup__input-first-name"
+                    <input class="popup__input popup__input-first-name"
                            id="first-name-input"
                            name="first-name"
                            placeholder="Имя"
                            required minlength="2" maxlength="40"/>
-                    <span id="first-name-input-error" class="popup__input-type-error"></span>
+                    <span id="first-name-input-error" class="popup__input-error"></span>
                 </label>
                 <label class="popup__form-field">
-                    <input class="popup__item popup__input-job"
+                    <input class="popup__input popup__input-job"
                            name="job-name"
                            id="about-input"
                            placeholder="О себе"
-                           required minlength="2" maxlength="200"
-                    />
-                    <span id="about-input-error" class="popup__input-type-error"></span>
+                           required minlength="2" maxlength="200"/>
+                    <span id="about-input-error" class="popup__input-error"></span>
                 </label>
                 <button class="popup__button-save" type="submit">Сохранить</button>
             </fieldset>
@@ -74,11 +73,11 @@
             <fieldset class="popup__set">
                 <h2 class="popup__title">Новое место</h2>
                 <label class="popup__form-field">
-                    <input class="popup__item popup__input-name" name="name" placeholder="Название"
+                    <input class="popup__input popup__input-name" name="name" placeholder="Название"
                            required minlength="1" maxlength="30"/>
                 </label>
                 <label class="popup__form-field">
-                    <input class="popup__item popup__input-link" name="link" placeholder="Ссылка на картинку"/>
+                    <input class="popup__input popup__input-link" name="link" placeholder="Ссылка на картинку"/>
                 </label>
                 <button class="popup__button-save" type="submit">Создать</button>
             </fieldset>

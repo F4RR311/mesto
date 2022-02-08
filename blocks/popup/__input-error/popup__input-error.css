@@ -1,4 +1,4 @@
-.popup__input-type-error{
+.popup__input-error {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -10,5 +10,3 @@
     left: 0;
     transition: 0.3s;
 }
-
-
