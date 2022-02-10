@@ -39,7 +39,7 @@
 <footer class="footer">
     <p class="footer__copyright">&copy; 2022. Леонтьев Валерий</p>
 </footer>
-<div class="popup" id="editProfile">
+<div id="editProfile" class="popup">
     <div class="popup__container">
         <button class="popup__close" type="button" aria-label="close"></button>
         <form name="profile" class="popup__form" novalidate>
@@ -63,12 +63,14 @@
                            required minlength="2" maxlength="200"/>
                     <span id="popup__job-input-error" class="popup__input-error"></span>
                 </label>
-                <button type="submit" disabled class="popup__button popup__button_disabled">Сохранить</button>
+                <button type="submit" disabled class="popup__button">Сохранить</button>
             </fieldset>
         </form>
+
     </div>
+<!--    <div class="popup__overlay"></div>-->
 </div>
-<div class="popup" id="newPlace">
+<div id="newPlace" class="popup">
     <div class="popup__container">
         <button class="popup__close" type="button" aria-label="close"></button>
         <form class="popup__form" name="newPlace" novalidate>
@@ -89,6 +91,7 @@
             </fieldset>
         </form>
     </div>
+    <div class="popup__overlay"></div>
 </div>
 <div class="popup" id="popupImage">
     <div class="popup__image-container">
@@ -99,6 +102,7 @@
             <figcaption class="popup__image-name"></figcaption>
         </figure>
     </div>
+    <div class="popup__overlay"></div>
 </div>
 <script src="scripts/validate.js"></script>
 <script src="scripts/index.js"></script>
