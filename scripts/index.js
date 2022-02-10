@@ -93,31 +93,46 @@ function createCard(cardItem) {
     placeElement.querySelector('.element__title').textContent = cardItem.name;
     addListeners(placeElement);
     return placeElement;
-};
+}
 
 
 function renderCard() {
     cards.forEach((cardItem) => {
         elements.append(createCard(cardItem));
     });
-};
+}
 
 
 function deleteCard(e) {
     e.target.closest('.element').remove();
-};
+}
 
 function likedCard(e) {
     e.target.classList.toggle('element__button-heart_liked');
-};
+}
 
 function openPopup(popup) {
     popup.classList.add("popup_opened");
-};
+    closeOnEsc(popup);
+}
 
 function closePopup(popup) {
     popup.classList.remove('popup_opened');
-};
+    window.onkeydown = null;
+}
+
+function closeOnEsc() {
+    window.onkeydown = event => {
+        if (event.keyCode == 27) {
+            closePopup(popupProfileElement);
+            closePopup(popupCard)
+            closePopup(popupImage);
+            resetEditPopupFields(popupProfileElement);
+            resetAddPopupFields(popupCard);
+            formElementCards.reset();
+        }
+    };
+}
 
 // валидация попапа профиля
 function resetEditPopupFields() {
@@ -127,7 +142,7 @@ function resetEditPopupFields() {
     nameInputError.textContent = '';
     jobInputError.classList.remove('popup__error_visible');
     jobInputError.textContent = '';
-};
+}
 
 // валидация попапа карточек
 function resetAddPopupFields() {
@@ -137,13 +152,13 @@ function resetAddPopupFields() {
     placeNameInputError.textContent = '';
     placeLinkInputError.classList.remove('popup__error_visible');
     placeLinkInputError.textContent = '';
-};
+}
 
 function addListeners(cardElement) {
     cardElement.querySelector('.element__delete-button').addEventListener('click', deleteCard);
     cardElement.querySelector('.element__button-heart').addEventListener('click', likedCard);
     cardElement.querySelector('.element__image').addEventListener('click', addPopupImage);
-};
+}
 
 //сохранение карточки профиля
 profileSaveButton.addEventListener('click', event => {
@@ -187,7 +202,7 @@ function addPopupImage(e) {
     popupPhotosImage.alt = e.target.alt;
     popupImageName.textContent = e.target.alt;
     openPopup(popupImage);
-};
+}
 
 // закрытие попапа профиля
 popupCloseButtonProfile.addEventListener('click', (event) => {
