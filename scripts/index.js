@@ -39,8 +39,6 @@ const popupCloseButtonProfile = popupProfileElement.querySelector('.popup__close
 //кнопка открытия профиля
 const profileOpenPopupButton = document.querySelector('.profile__edit-button');
 
-//кнопка save профиля
-const profileSaveButton = popupProfileElement.querySelector('.popup__button');
 
 //доступ к инпутам
 const nameInput = formElementProfile.elements.name;
@@ -56,13 +54,11 @@ const profileDescription = document.querySelector('.profile__description');
 //Попап карточек
 const popupCard = document.getElementById('newPlace');
 const formElementCards = document.forms.newPlace;
-//кнопка save добавления мест
-const cardsSaveButton = popupCard.querySelector('.popup__button');
 const profileCardAddOpenPopupButton = document.querySelector('.profile__add-card');
 const cardClosePopupButton = popupCard.querySelector('.popup__close');
 const placeNameInput = formElementCards.elements.placeName;
 const placeLinkInput = formElementCards.elements.placeLink;
-
+const buttonSubmitCads = popupCard.querySelector('.popup__button');
 // Поля с ошибкой
 const placeNameInputError = document.querySelector('#popup__placeName-input-error');
 const placeLinkInputError = document.querySelector('#popup__placeLink-input-error');
@@ -85,7 +81,6 @@ const editProfileOverlay = popupProfileElement.querySelector('.popup__overlay');
 const popupCardOverlay = popupCard.querySelector('.popup__overlay');
 const popupImageOverlay = popupImage.querySelector('.popup__overlay');
 
-
 function createCard(cardItem) {
     const placeElement = templateElement.cloneNode(true);
     placeElement.querySelector('.element__image').src = cardItem.link;
@@ -95,13 +90,11 @@ function createCard(cardItem) {
     return placeElement;
 }
 
-
 function renderCard() {
     cards.forEach((cardItem) => {
         elements.append(createCard(cardItem));
     });
 }
-
 
 function deleteCard(e) {
     e.target.closest('.element').remove();
@@ -113,25 +106,12 @@ function likedCard(e) {
 
 function openPopup(popup) {
     popup.classList.add("popup_opened");
-    closeOnEsc(popup);
+    document.addEventListener('keydown', closeByEsc);
 }
 
 function closePopup(popup) {
     popup.classList.remove('popup_opened');
-    window.onkeydown = null;
-}
-
-function closeOnEsc() {
-    window.onkeydown = event => {
-        if (event.keyCode == 27) {
-            closePopup(popupProfileElement);
-            closePopup(popupCard)
-            closePopup(popupImage);
-            resetEditPopupFields(popupProfileElement);
-            resetAddPopupFields(popupCard);
-            formElementCards.reset();
-        }
-    };
+    document.removeEventListener('keydown', closeByEsc);
 }
 
 // валидация попапа профиля
@@ -161,7 +141,7 @@ function addListeners(cardElement) {
 }
 
 //сохранение карточки профиля
-profileSaveButton.addEventListener('click', event => {
+formElementProfile.addEventListener('submit', event => {
     event.preventDefault();
     profileTitle.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
@@ -178,7 +158,7 @@ profileOpenPopupButton.addEventListener('click', () => {
 });
 
 //сохранение карточки добавления картинок
-cardsSaveButton.addEventListener('click', event => {
+popupCard.addEventListener('submit', event => {
     event.preventDefault();
     const placeName = createCard({
         name: placeNameInput.value,
@@ -188,6 +168,8 @@ cardsSaveButton.addEventListener('click', event => {
     closePopup(popupCard);
     placeNameInput.value = "";
     placeLinkInput.value = "";
+    buttonSubmitCads.classList.add('popup__button_disabled');
+    buttonSubmitCads.setAttribute('disabled', true);
 
 });
 
@@ -221,6 +203,15 @@ cardClosePopupButton.addEventListener('click', () => {
     closePopup(popupCard);
     resetAddPopupFields(cardClosePopupButton);
 });
+
+// закрытие попапов через ескейп
+function closeByEsc(evt) {
+    if (evt.key === 'Escape') {
+        const popupOpened = document.querySelector('.popup_opened');
+        closePopup(popupOpened);
+    }
+
+}
 
 //оверлей попапа профайла
 editProfileOverlay.addEventListener('click', function () {

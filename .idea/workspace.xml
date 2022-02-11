@@ -4,6 +4,10 @@
     <expand>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -12,16 +16,12 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="overlays">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="finish esc closest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-3b55e3428515c11e06ffa2c03917f340401f3a3e" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-752fa102e675fb4ac147183756929a0e5cdc9759" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
@@ -126,7 +126,9 @@
       <workItem from="1644258753192" duration="7626000" />
       <workItem from="1644340143756" duration="15863000" />
       <workItem from="1644432844066" duration="4665000" />
-      <workItem from="1644514125872" duration="13750000" />
+      <workItem from="1644514125872" duration="14201000" />
+      <workItem from="1644534982503" duration="2946000" />
+      <workItem from="1644605234526" duration="7818000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -394,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644533252367</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="finish esc closest">
+      <created>1644533586166</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1644533586166</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +422,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="3d fix bugss" />
     <MESSAGE value="new develop" />
     <MESSAGE value="new develop1" />
     <MESSAGE value="initial commit" />
@@ -438,7 +446,8 @@
     <MESSAGE value="refactor-popup-close" />
     <MESSAGE value="finish add popups" />
     <MESSAGE value="overlays" />
-    <option name="LAST_COMMIT_MESSAGE" value="overlays" />
+    <MESSAGE value="finish esc closest" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish esc closest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="839" y="412" key="#Custom_Plugin_Repositories" timestamp="1644258685530">
@@ -449,11 +458,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="714" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643652610930" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1644525226827">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1644612574915">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1642354554503" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644525226827" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644612574915" />
     <state width="1658" height="214" key="GridCell.Tab.0.bottom" timestamp="1643408701120">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -478,11 +487,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644533255866">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644533831359">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644533255866" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644533831359" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
@@ -491,23 +500,5 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="616" y="353" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643452376081" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/scripts/index.js</url>
-          <line>56</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/scripts/index.js</url>
-          <line>77</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
