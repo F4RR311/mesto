@@ -28,7 +28,7 @@ const cards = [
 ];
 
 // Попап профиля
-const popupProfileElement = document.getElementById('editProfile');
+const popupProfileElement = document.querySelector('.popup_profile');
 
 //Форма профиля
 const formElementProfile = document.forms.profile;
@@ -38,7 +38,6 @@ const popupCloseButtonProfile = popupProfileElement.querySelector('.popup__close
 
 //кнопка открытия профиля
 const profileOpenPopupButton = document.querySelector('.profile__edit-button');
-
 
 //доступ к инпутам
 const nameInput = formElementProfile.elements.name;
@@ -52,7 +51,7 @@ const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__description');
 
 //Попап карточек
-const popupCard = document.getElementById('newPlace');
+const popupCard = document.querySelector('.popup_place');
 const formElementCards = document.forms.newPlace;
 const profileCardAddOpenPopupButton = document.querySelector('.profile__add-card');
 const cardClosePopupButton = popupCard.querySelector('.popup__close');
@@ -71,7 +70,7 @@ const elements = document.querySelector('.elements');
 const buttonElementHeart = document.querySelector('.element__button-heart');
 
 //Получаем доступ к попапу всплывающей картинки
-const popupImage = document.getElementById('popupImage');
+const popupImage = document.querySelector('.popup_image');
 const popupButtonCloseImage = popupImage.querySelector('.popup__close');
 const popupPhotosImage = document.querySelector('.popup__image');
 const popupImageName = document.querySelector('.popup__image-name');
@@ -147,6 +146,7 @@ formElementProfile.addEventListener('submit', event => {
     profileDescription.textContent = jobInput.value;
     closePopup(popupProfileElement);
 
+
 });
 
 // окрытие попапа профиля
@@ -155,6 +155,7 @@ profileOpenPopupButton.addEventListener('click', () => {
     jobInput.value = profileDescription.textContent;
     openPopup(popupProfileElement);
     resetEditPopupFields(profileOpenPopupButton);
+
 });
 
 //сохранение карточки добавления картинок
@@ -173,9 +174,11 @@ popupCard.addEventListener('submit', event => {
 
 });
 
-// окрытие попапа карточек
+// окрытие попапа добавлениякарточек
 profileCardAddOpenPopupButton.addEventListener('click', () => {
     openPopup(popupCard);
+    resetAddPopupFields(profileCardAddOpenPopupButton);
+
 });
 
 // окрытие попапа выслывающих картинок
@@ -184,13 +187,14 @@ function addPopupImage(e) {
     popupPhotosImage.alt = e.target.alt;
     popupImageName.textContent = e.target.alt;
     openPopup(popupImage);
+    resetAddPopupFields(addPopupImage);
 }
 
 // закрытие попапа профиля
 popupCloseButtonProfile.addEventListener('click', (event) => {
     const clickClose = event.target.closest('.popup');
     closePopup(clickClose);
-    resetAddPopupFields(popupCloseButtonProfile);
+
 });
 
 // закрытие попапа всплывающих картинок
@@ -201,33 +205,32 @@ popupButtonCloseImage.addEventListener('click', () => {
 // закрытие попапа добавления карточек
 cardClosePopupButton.addEventListener('click', () => {
     closePopup(popupCard);
-    resetAddPopupFields(cardClosePopupButton);
+
 });
 
-// закрытие попапов через ескейп
+// закрытие попапов через Esc
 function closeByEsc(evt) {
     if (evt.key === 'Escape') {
         const popupOpened = document.querySelector('.popup_opened');
         closePopup(popupOpened);
     }
-
 }
 
 //оверлей попапа профайла
 editProfileOverlay.addEventListener('click', function () {
     closePopup(popupProfileElement);
-    resetAddPopupFields();
+
 });
 //оверлей попапа добавления карточки
 popupCardOverlay.addEventListener('click', function () {
     closePopup(popupCard);
-    resetAddPopupFields();
+
 });
 
 //оверлей всплывающей картинки
 popupImageOverlay.addEventListener('click', function () {
     closePopup(popupImage);
-    resetAddPopupFields();
+
 });
 
 renderCard();

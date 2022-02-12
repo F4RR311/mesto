@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="finish esc closest">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="2-nd fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -75,12 +75,16 @@
       <recent name="C:\Yandex practicum\fourth-sprint\mesto" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.index.js">
     <configuration name="arrayMININ.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../../../Java Script нативнка/массивы/arrayMININ.js" working-dir="$PROJECT_DIR$/../../../Java Script нативнка/массивы">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/index.js" working-dir="$PROJECT_DIR$/scripts">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.arrayMININ.js" />
       </list>
     </recent_temporary>
@@ -128,7 +132,8 @@
       <workItem from="1644432844066" duration="4665000" />
       <workItem from="1644514125872" duration="14201000" />
       <workItem from="1644534982503" duration="2946000" />
-      <workItem from="1644605234526" duration="7818000" />
+      <workItem from="1644605234526" duration="8542000" />
+      <workItem from="1644688422985" duration="3377000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -403,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644533586166</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="2-nd fix">
+      <created>1644613523908</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1644613523908</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +434,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new develop" />
     <MESSAGE value="new develop1" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="render-cards" />
@@ -447,7 +458,8 @@
     <MESSAGE value="finish add popups" />
     <MESSAGE value="overlays" />
     <MESSAGE value="finish esc closest" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish esc closest" />
+    <MESSAGE value="2-nd fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="2-nd fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="839" y="412" key="#Custom_Plugin_Repositories" timestamp="1644258685530">
@@ -458,27 +470,27 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="714" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643652610930" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1644612574915">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1644694770308">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1642354554503" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644612574915" />
-    <state width="1658" height="214" key="GridCell.Tab.0.bottom" timestamp="1643408701120">
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644694770308" />
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1644698879688">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1658" height="214" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643408701120" />
-    <state width="1658" height="214" key="GridCell.Tab.0.center" timestamp="1643408701120">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644698879688" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1644698879688">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1658" height="214" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643408701120" />
-    <state width="1658" height="214" key="GridCell.Tab.0.left" timestamp="1643408701120">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644698879688" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1644698879688">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1658" height="214" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643408701120" />
-    <state width="1658" height="214" key="GridCell.Tab.0.right" timestamp="1643408701120">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644698879688" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1644698879688">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1658" height="214" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643408701120" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644698879688" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1644258862114">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -487,11 +499,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644533831359">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1644613526003">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644533831359" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644613526003" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
