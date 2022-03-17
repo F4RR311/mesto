@@ -1,4 +1,5 @@
-'use strict';
+import {FormValidator} from './FormValidator.js'
+
 const cards = [
     {
         name: 'Архыз',
@@ -53,6 +54,7 @@ const profileDescription = document.querySelector('.profile__description');
 //Попап карточек
 const popupCard = document.querySelector('.popup_place');
 const formElementCards = document.forms.newPlace;
+// кнопка добавления карточек
 const profileCardAddOpenPopupButton = document.querySelector('.profile__add-card');
 const cardClosePopupButton = popupCard.querySelector('.popup__close');
 const placeNameInput = formElementCards.elements.placeName;
@@ -66,9 +68,6 @@ const placeLinkInputError = document.querySelector('#popup__placeLink-input-erro
 const templateElement = document.querySelector('.elements-template').content;
 const elements = document.querySelector('.elements');
 
-// Получаем доступ к кнопке лайка
-const buttonElementHeart = document.querySelector('.element__button-heart');
-
 //Получаем доступ к попапу всплывающей картинки
 const popupImage = document.querySelector('.popup_image');
 const popupButtonCloseImage = popupImage.querySelector('.popup__close');
@@ -79,6 +78,20 @@ const popupImageName = document.querySelector('.popup__image-name');
 const editProfileOverlay = popupProfileElement.querySelector('.popup__overlay');
 const popupCardOverlay = popupCard.querySelector('.popup__overlay');
 const popupImageOverlay = popupImage.querySelector('.popup__overlay');
+
+const validationConfig = {
+    formSelector: '.popup__form',
+    inputSelector: '.popup__input',
+    submitButtonSelector: '.popup__button',
+    inactiveButtonClass: 'popup__button_disabled',
+    inputErrorClass: 'popup__input_type_error',
+    errorClass: 'popup__error_visible'
+}
+
+const editProfileValidator = new FormValidator(validationConfig, profileOpenPopupButton);
+const addCardValidator = new FormValidator(validationConfig, profileCardAddOpenPopupButton);
+editProfileValidator.enableValidation();
+addCardValidator.enableValidation();
 
 function createCard(cardItem) {
     const placeElement = templateElement.cloneNode(true);
@@ -170,14 +183,18 @@ popupCard.addEventListener('submit', event => {
     placeNameInput.value = "";
     placeLinkInput.value = "";
     buttonSubmitCads.classList.add('popup__button_disabled');
-    buttonSubmitCads.setAttribute('disabled', true);
+    // buttonSubmitCads.setAttribute('disabled', true);
+
 
 });
 
-// окрытие попапа добавлениякарточек
+// окрытие попапа добавления карточек
 profileCardAddOpenPopupButton.addEventListener('click', () => {
     openPopup(popupCard);
-    resetAddPopupFields(profileCardAddOpenPopupButton);
+    addCardValidator.resetErrors();
+    addCardValidator.toggleButtonState();
+    openPopup(popupCard);
+    //resetAddPopupFields(profileCardAddOpenPopupButton);
 
 });
 
@@ -234,3 +251,4 @@ popupImageOverlay.addEventListener('click', function () {
 });
 
 renderCard();
+
