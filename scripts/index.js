@@ -199,7 +199,7 @@ profileCardAddOpenPopupButton.addEventListener('click', () => {
 });
 
 // окрытие попапа выслывающих картинок
-function addPopupImage(e) {
+export function addPopupImage(e) {
     popupPhotosImage.src = e.target.src;
     popupPhotosImage.alt = e.target.alt;
     popupImageName.textContent = e.target.alt;
