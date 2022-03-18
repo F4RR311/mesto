@@ -1,32 +1,6 @@
-import {FormValidator} from './FormValidator.js'
-
-const cards = [
-    {
-        name: 'Архыз',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-    },
-    {
-        name: 'Челябинская область',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-    },
-    {
-        name: 'Иваново',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-    },
-    {
-        name: 'Камчатка',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-    },
-    {
-        name: 'Холмогорский район',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-    },
-    {
-        name: "Флоренция",
-        link:
-            "https://cdn.pixabay.com/photo/2016/09/08/23/08/florence-1655830_960_720.jpg",
-    }
-];
+import Card from './Card.js';
+import FormValidator from './FormValidator.js';
+import {cards, validationConfig} from "./initialData.js";
 
 // Попап профиля
 const popupProfileElement = document.querySelector('.popup_profile');
@@ -65,7 +39,7 @@ const placeNameInputError = document.querySelector('#popup__placeName-input-erro
 const placeLinkInputError = document.querySelector('#popup__placeLink-input-error');
 
 // Доступ к временным элементам
-const templateElement = document.querySelector('.elements-template').content;
+const templateElement = '.elements-template';
 const elements = document.querySelector('.elements');
 
 //Получаем доступ к попапу всплывающей картинки
@@ -79,42 +53,31 @@ const editProfileOverlay = popupProfileElement.querySelector('.popup__overlay');
 const popupCardOverlay = popupCard.querySelector('.popup__overlay');
 const popupImageOverlay = popupImage.querySelector('.popup__overlay');
 
-const validationConfig = {
-    formSelector: '.popup__form',
-    inputSelector: '.popup__input',
-    submitButtonSelector: '.popup__button',
-    inactiveButtonClass: 'popup__button_disabled',
-    inputErrorClass: 'popup__input_type_error',
-    errorClass: 'popup__error_visible'
-}
 
 const editProfileValidator = new FormValidator(validationConfig, profileOpenPopupButton);
 const addCardValidator = new FormValidator(validationConfig, profileCardAddOpenPopupButton);
 editProfileValidator.enableValidation();
 addCardValidator.enableValidation();
 
-function createCard(cardItem) {
-    const placeElement = templateElement.cloneNode(true);
-    placeElement.querySelector('.element__image').src = cardItem.link;
-    placeElement.querySelector('.element__image').alt = cardItem.name;
-    placeElement.querySelector('.element__title').textContent = cardItem.name;
-    addListeners(placeElement);
-    return placeElement;
+function createCard(item) {
+    const card = new Card(item, templateElement);
+
+    return card.generateCard();
 }
 
 function renderCard() {
-    cards.forEach((cardItem) => {
-        elements.append(createCard(cardItem));
+    cards.forEach((card) => {
+        elements.append(createCard(card));
     });
 }
 
-function deleteCard(e) {
-    e.target.closest('.element').remove();
-}
+// function deleteCard(e) {
+//     e.target.closest('.element').remove();
+// }
 
-function likedCard(e) {
-    e.target.classList.toggle('element__button-heart_liked');
-}
+// function likedCard(e) {
+//     e.target.classList.toggle('element__button-heart_liked');
+// }
 
 function openPopup(popup) {
     popup.classList.add("popup_opened");
@@ -198,13 +161,13 @@ profileCardAddOpenPopupButton.addEventListener('click', () => {
 
 });
 
-// окрытие попапа выслывающих картинок
-export function addPopupImage(e) {
-    popupPhotosImage.src = e.target.src;
-    popupPhotosImage.alt = e.target.alt;
-    popupImageName.textContent = e.target.alt;
+// окрытие попапа всплывающих картинок
+export function addPopupImage(imageLink, imageName) {
+    popupPhotosImage.src = imageLink;
+    popupPhotosImage.alt = imageName;
+    popupImageName.textContent = imageName;
     openPopup(popupImage);
-    resetAddPopupFields(addPopupImage);
+
 }
 
 // закрытие попапа профиля

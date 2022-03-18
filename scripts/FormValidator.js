@@ -1,7 +1,7 @@
-export class FormValidator {
-    constructor(settings, form) {
+export default class FormValidator {
+    constructor(validationConfig, form) {
         this._form = form;
-        this._settings = settings;
+        this._settings = validationConfig;
         this._buttonElement =  this._form.querySelector(this._form.submitButtonSelector);
         this._inputList = Array.from(this._form.querySelectorAll(this._settings.inputSelector));
     }
