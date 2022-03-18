@@ -17,7 +17,7 @@ export default class Card {
             (evt) => {
             this._deleteCard(evt)
             })
-        this._cardsElementImage.querySelector('.element__image').addEventListener('click',
+        this._cardsElementImage.addEventListener('click',
             () => {
                 addPopupImage(this._cardsElementImage.src, this._cardsElementImage.alt)
             })
