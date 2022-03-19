@@ -10,7 +10,8 @@ export default class Card {
 
     _setEventListeners() {
         this._likeButton = this._placeElement.querySelector('.element__button-heart');
-        this._placeElement.querySelector('.element__button-heart').addEventListener('click',
+
+        this._likeButton.addEventListener('click',
             (evt) => {
                 this._likedCard(evt)
             })
@@ -29,12 +30,13 @@ export default class Card {
             .cloneNode(true);
     }
 
-    _likedCard = (evt) => {
-        evt.target.classList.toggle('element__button-heart_liked');
+    _likedCard = () => {
+        this._likeButton.classList.toggle('element__button-heart_liked');
     };
 
-    _deleteCard = (evt) => {
-        evt.target.closest('.element').remove();
+    _deleteCard = () => {
+        this._placeElement.remove();
+        this._placeElement = null;
     };
 
     generateCard() {

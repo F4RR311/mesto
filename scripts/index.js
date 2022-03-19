@@ -34,7 +34,7 @@ const placeLinkInput = formElementCards.elements.placeLink;
 
 // Доступ к временным элементам
 const templateElement = '.elements-template';
-const elements = document.querySelector('.elements');
+const cardsContainer = document.querySelector('.elements');
 
 //Получаем доступ к попапу всплывающей картинки
 const popupImage = document.querySelector('.popup_image');
@@ -43,13 +43,13 @@ const popupPhotosImage = document.querySelector('.popup__image');
 const popupImageName = document.querySelector('.popup__image-name');
 
 //Оверлеи
-const editProfileOverlay = popupProfileElement.querySelector('.popup__overlay');
+const profileOverlay = popupProfileElement.querySelector('.popup__overlay');
 const popupCardOverlay = popupCard.querySelector('.popup__overlay');
 const popupImageOverlay = popupImage.querySelector('.popup__overlay');
 
 
-const editProfileValidator = new FormValidator(classData, formElementProfile);
-editProfileValidator.enableValidation();
+const profileValidator = new FormValidator(classData, formElementProfile);
+profileValidator.enableValidation();
 
 const addCardValidator = new FormValidator(classData, formElementCards);
 addCardValidator.enableValidation();
@@ -62,7 +62,7 @@ function createCard(item) {
 
 function renderCard() {
     cards.forEach((card) => {
-        elements.append(createCard(card));
+        cardsContainer.append(createCard(card));
     });
 }
 
@@ -102,10 +102,9 @@ popupCard.addEventListener('submit', event => {
         name: placeNameInput.value,
         link: placeLinkInput.value
     });
-    elements.prepend(placeName);
+    cardsContainer.prepend(placeName);
     closePopup(popupCard);
-    placeNameInput.value = "";
-    placeLinkInput.value = "";
+    formElementCards.reset();
     addCardValidator.toggleButtonState();
 
 });
@@ -153,7 +152,7 @@ function closeByEsc(evt) {
 }
 
 //оверлей попапа профайла
-editProfileOverlay.addEventListener('click', function () {
+profileOverlay.addEventListener('click', function () {
     closePopup(popupProfileElement);
 
 });
