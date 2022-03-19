@@ -51,8 +51,8 @@ const popupImageOverlay = popupImage.querySelector('.popup__overlay');
 const profileValidator = new FormValidator(classData, formElementProfile);
 profileValidator.enableValidation();
 
-const addCardValidator = new FormValidator(classData, formElementCards);
-addCardValidator.enableValidation();
+const cardValidator = new FormValidator(classData, formElementCards);
+cardValidator.enableValidation();
 
 function createCard(item) {
     const card = new Card(item, templateElement);
@@ -105,7 +105,7 @@ popupCard.addEventListener('submit', event => {
     cardsContainer.prepend(placeName);
     closePopup(popupCard);
     formElementCards.reset();
-    addCardValidator.toggleButtonState();
+    cardValidator.toggleButtonState();
 
 });
 
