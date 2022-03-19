@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="processing...">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__button/_disabled/popup__button_disabled.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/_disabled/popup__button_disabled.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/FormValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/FormValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/initialData.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/initialData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-99c9faf12c5253d4752be1d2ae43e2839d1557fb" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -151,7 +151,10 @@
       <workItem from="1647378184934" duration="4906000" />
       <workItem from="1647546759161" duration="9227000" />
       <workItem from="1647629791324" duration="4204000" />
-      <workItem from="1647634224864" duration="13047000" />
+      <workItem from="1647634224864" duration="13070000" />
+      <workItem from="1647649254408" duration="62000" />
+      <workItem from="1647678204640" duration="602000" />
+      <workItem from="1647695310895" duration="1848000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;12&quot;">
       <created>1642190352785</created>
@@ -482,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647640844467</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="finish">
+      <created>1647649169952</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1647649169952</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix aute-test bugs" />
     <MESSAGE value="fix auto-test bugs" />
     <MESSAGE value="some review fix" />
     <MESSAGE value="finish fix" />
@@ -526,7 +535,8 @@
     <MESSAGE value="develop card" />
     <MESSAGE value="refactoring..." />
     <MESSAGE value="processing..." />
-    <option name="LAST_COMMIT_MESSAGE" value="processing..." />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1249" y="330" key="#Custom_Plugin_Repositories" timestamp="1647378084663">
@@ -542,31 +552,31 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647629968019" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1647629838746">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1647696617523">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1642354554503" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647629838746" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647696617523" />
     <state x="817" y="416" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1647380909013">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="817" y="416" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647380909013" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1647639395851">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1647649181448">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647639395851" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1647639395851">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647649181448" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1647649181448">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647639395851" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1647639395851">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647649181448" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1647649181448">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647639395851" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1647639395851">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647649181448" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1647649181448">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647639395851" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647649181448" />
     <state x="-1551" y="117" key="SettingsEditor" timestamp="1647378125523">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
@@ -576,11 +586,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1647640846786">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1647649172711">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647640846786" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647649172711" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>

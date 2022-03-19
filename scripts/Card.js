@@ -1,14 +1,15 @@
 import {addPopupImage} from './index.js'
 
 export default class Card {
-    constructor(data, cardTemplate) {
+    constructor(data, selector) {
         this._imageLink = data.link;
         this._imageName = data.name;
         this._name = data.name;
-        this._cardTemplate = cardTemplate;
+        this._selector = selector;
     }
 
     _setEventListeners() {
+        this._likeButton = this._placeElement.querySelector('.element__button-heart');
         this._placeElement.querySelector('.element__button-heart').addEventListener('click',
             (evt) => {
                 this._likedCard(evt)
@@ -24,7 +25,7 @@ export default class Card {
     }
 
     _getTemplateElement() {
-        return document.querySelector(this._cardTemplate).content.querySelector('.element')
+        return document.querySelector(this._selector).content.querySelector('.element')
             .cloneNode(true);
     }
 
