@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 const showInputError = (formElement, inputElement, errorMessage) => {
 
     const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
@@ -5,6 +16,20 @@ const showInputError = (formElement, inputElement, errorMessage) => {
     errorElement.textContent = errorMessage;
     errorElement.classList.add('popup__input-error_visible');
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const hideInputError = (formElement, inputElement) => {
 

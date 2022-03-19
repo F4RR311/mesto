@@ -1,4 +1,5 @@
 import {addPopupImage} from './index.js'
+
 export default class Card {
     constructor(data, cardTemplate) {
         this._imageLink = data.link;
@@ -7,7 +8,6 @@ export default class Card {
         this._cardTemplate = cardTemplate;
     }
 
-
     _setEventListeners() {
         this._placeElement.querySelector('.element__button-heart').addEventListener('click',
             (evt) => {
@@ -15,13 +15,12 @@ export default class Card {
             })
         this._placeElement.querySelector('.element__delete-button').addEventListener('click',
             (evt) => {
-            this._deleteCard(evt)
+                this._deleteCard(evt)
             })
         this._cardsElementImage.addEventListener('click',
             () => {
                 addPopupImage(this._cardsElementImage.src, this._cardsElementImage.alt)
             })
-
     }
 
     _getTemplateElement() {
@@ -37,9 +36,7 @@ export default class Card {
         evt.target.closest('.element').remove();
     };
 
-
     generateCard() {
-
         this._placeElement = this._getTemplateElement();
         this._cardsElementImage = this._placeElement.querySelector('.element__image');
         this._setEventListeners();

@@ -25,11 +25,10 @@ export const cards = [
             "https://cdn.pixabay.com/photo/2016/09/08/23/08/florence-1655830_960_720.jpg",
     }
 ];
-export const validationConfig = {
-    formSelector: '.popup__form',
-    inputSelector: '.popup__input',
-    submitButtonSelector: '.popup__button',
+export const classData = {
+    inputSelector: 'popup__input',
+    submitButtonSelector: 'popup__button',
     inactiveButtonClass: 'popup__button_disabled',
     inputErrorClass: 'popup__input_type_error',
-    errorClass: 'popup__error_visible'
+    errorClass: 'popup__input-error_visible'
 };
