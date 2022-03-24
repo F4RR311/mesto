@@ -1,6 +1,6 @@
 import Card from './Card.js';
 import FormValidator from './FormValidator.js';
-import {cards, classData} from "./initialData.js";
+import {cards, classData} from "../Utils/initialData.js";
 
 // Попап профиля
 const popupProfileElement = document.querySelector('.popup_profile');
@@ -39,8 +39,8 @@ const cardsContainer = document.querySelector('.elements');
 //Получаем доступ к попапу всплывающей картинки
 const popupImage = document.querySelector('.popup_image');
 const popupButtonCloseImage = popupImage.querySelector('.popup__close');
-const popupPhotosImage = document.querySelector('.popup__image');
-const popupImageName = document.querySelector('.popup__image-name');
+export const popupPhotosImage = document.querySelector('.popup__image');
+export const popupImageName = document.querySelector('.popup__image-name');
 
 //Оверлеи
 const profileOverlay = popupProfileElement.querySelector('.popup__overlay');
