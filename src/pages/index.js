@@ -52,7 +52,7 @@ cardValidator.enableValidation();
 function createCard(item) {
     const card = new Card(item, templateElement, () => {
         imagePopup.open(item.name, item.link);
-        //  addCardPopup.open()
+
 
 
     });
@@ -71,30 +71,12 @@ const section = new Section({items: cards, renderer: renderCard}, '.elements');
 section.rendererItems();
 
 
-const imagePopup = new PopupWithImage('.popup_image');
-const addCardPopup = new PopupWithForm('.popup_place');
-const editProfilePopup = new PopupWithForm('.popup_profile');
-addCardPopup.setEventListeners();
-imagePopup.setEventListeners();
-editProfilePopup.setEventListeners();
-
-
-// function openPopup(popup) {
-//     popup.classList.add("popup_opened");
-//
-// }
-
-function closePopup(popup) {
-    popup.classList.remove('popup_opened');
-
-}
-
 //сохранение карточки профиля
 formElementProfile.addEventListener('submit', event => {
     event.preventDefault();
     profileTitle.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
-    closePopup(popupProfileElement);
+    editProfilePopup.close();
 
 
 });
@@ -109,6 +91,29 @@ profileOpenPopupButton.addEventListener('click', () => {
 });
 
 //сохранение карточки добавления картинок
+const handleCardFormSubmit = () => {
+    evt.preventDefault();
+    const placeName = createCard({
+        name: placeNameInput.value,
+        link: placeLinkInput.value
+    });
+    section.addItem(placeName);
+    addCardPopup.close();
+    cardValidator.toggleButtonState();
+
+}
+
+const imagePopup = new PopupWithImage('.popup_image');
+const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);
+const editProfilePopup = new PopupWithForm('.popup_profile', () => {
+    console.log('12121')
+});
+
+
+addCardPopup.setEventListeners();
+imagePopup.setEventListeners();
+editProfilePopup.setEventListeners();
+
 // popupCard.addEventListener('submit', event => {
 //     event.preventDefault();
 //     const placeName = createCard({
@@ -116,7 +121,7 @@ profileOpenPopupButton.addEventListener('click', () => {
 //         link: placeLinkInput.value
 //     });
 //     section.addItem(placeName)
-//     closePopup(popupCard);
+//     addCardPopup.close();
 //     formElementCards.reset();
 //     cardValidator.toggleButtonState();
 //

@@ -9,9 +9,9 @@ export  class Card {
 
     _setEventListeners() {
 
-        // this._placeElement.querySelector('.element__button-heart_liked').addEventListener('click', (evt) => {
-        //     this._handleLikeButtonClick(evt);
-        // })
+        this._placeElement.querySelector('.element__button-heart').addEventListener('click', (evt) => {
+            this._handleLikeButtonClick(evt);
+        })
 
         this._placeElement.querySelector('.element__delete-button').addEventListener('click', (evt) => {
             this._handleRemoveButtonClick(evt);
@@ -28,7 +28,7 @@ export  class Card {
     }
 
     _handleLikeButtonClick(evt) {
-        evt.target.toggle('element__button-heart_liked');
+        evt.target.classList.toggle('element__button-heart_liked');
     }
 
     _handleRemoveButtonClick(evt) {
