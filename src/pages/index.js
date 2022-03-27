@@ -1,7 +1,6 @@
 import {Card} from '../components/Card.js';
 import FormValidator from '../components/FormValidator.js';
 import Section from '../components/Section.js';
-import {Popup} from '../components/Popup.js';
 import {PopupWithImage} from '../components/PopupWithImage.js';
 import {PopupWithForm} from '../components/PopupWithForm.js';
 import {cards, classData} from "../Utils/initialData.js";
@@ -44,12 +43,6 @@ const cardsContainer = document.querySelector('.elements');
 const popupImage = document.querySelector('.popup_image');
 const popupButtonCloseImage = popupImage.querySelector('.popup__close');
 
-//Оверлеи
-const profileOverlay = popupProfileElement.querySelector('.popup__overlay');
-const popupCardOverlay = popupCard.querySelector('.popup__overlay');
-const popupImageOverlay = popupImage.querySelector('.popup__overlay');
-
-
 const profileValidator = new FormValidator(classData, formElementProfile);
 profileValidator.enableValidation();
 
@@ -59,6 +52,7 @@ cardValidator.enableValidation();
 function createCard(item) {
     const card = new Card(item, templateElement, () => {
         imagePopup.open(item.name, item.link);
+        //  addCardPopup.open()
 
 
     });
@@ -84,6 +78,7 @@ addCardPopup.setEventListeners();
 imagePopup.setEventListeners();
 editProfilePopup.setEventListeners();
 
+
 // function openPopup(popup) {
 //     popup.classList.add("popup_opened");
 //
@@ -104,14 +99,14 @@ formElementProfile.addEventListener('submit', event => {
 
 });
 
-// окрытие попапа профиля
-// profileOpenPopupButton.addEventListener('click', () => {
-//     nameInput.value = profileTitle.textContent;
-//     jobInput.value = profileDescription.textContent;
-//     openPopup(popupProfileElement);
-//
-//
-// });
+//окрытие попапа профиля
+profileOpenPopupButton.addEventListener('click', () => {
+    nameInput.value = profileTitle.textContent;
+    jobInput.value = profileDescription.textContent;
+    editProfilePopup.open();
+
+
+});
 
 //сохранение карточки добавления картинок
 // popupCard.addEventListener('submit', event => {
@@ -128,30 +123,30 @@ formElementProfile.addEventListener('submit', event => {
 // });
 
 
-// окрытие попапа добавления карточек
-// profileCardAddOpenPopupButton.addEventListener('click', () => {
-//     openPopup(popupCard);
-//
+//окрытие попапа добавления карточек
+profileCardAddOpenPopupButton.addEventListener('click', () => {
+    addCardPopup.open();
+
+
+});
+
+// закрытие попапа профиля
+// popupCloseButtonProfile.addEventListener('click', (event) => {
+//     const clickClose = event.target.closest('.popup');
+//     closePopup(clickClose);
 //
 // });
 
-// закрытие попапа профиля
-popupCloseButtonProfile.addEventListener('click', (event) => {
-    const clickClose = event.target.closest('.popup');
-    closePopup(clickClose);
-
-});
-
 // закрытие попапа всплывающих картинок
-popupButtonCloseImage.addEventListener('click', () => {
-    closePopup(popupImage);
-});
-
-// закрытие попапа добавления карточек
-cardClosePopupButton.addEventListener('click', () => {
-    closePopup(popupCard);
-
-});
+// popupButtonCloseImage.addEventListener('click', () => {
+//     closePopup(popupImage);
+// });
+//
+// // закрытие попапа добавления карточек
+// cardClosePopupButton.addEventListener('click', () => {
+//     closePopup(popupCard);
+//
+// });
 
 
 //оверлей попапа профайла
