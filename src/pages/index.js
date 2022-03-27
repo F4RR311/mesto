@@ -54,15 +54,14 @@ function createCard(item) {
         imagePopup.open(item.name, item.link);
 
 
-
     });
 
     return card.generateCard();
 }
 
-function renderCard(card) {
+function renderCard(card, wrap) {
 
-    cardsContainer.append(createCard(card));
+    wrap.append(createCard(card));
 
 }
 
@@ -90,12 +89,13 @@ profileOpenPopupButton.addEventListener('click', () => {
 
 });
 
+
 //сохранение карточки добавления картинок
-const handleCardFormSubmit = () => {
-    evt.preventDefault();
+const handleCardFormSubmit = (data) => {
+
     const placeName = createCard({
-        name: placeNameInput.value,
-        link: placeLinkInput.value
+        name: data.placeName,
+        link: data.placeLink
     });
     section.addItem(placeName);
     addCardPopup.close();
@@ -114,19 +114,6 @@ addCardPopup.setEventListeners();
 imagePopup.setEventListeners();
 editProfilePopup.setEventListeners();
 
-// popupCard.addEventListener('submit', event => {
-//     event.preventDefault();
-//     const placeName = createCard({
-//         name: placeNameInput.value,
-//         link: placeLinkInput.value
-//     });
-//     section.addItem(placeName)
-//     addCardPopup.close();
-//     formElementCards.reset();
-//     cardValidator.toggleButtonState();
-//
-// });
-
 
 //окрытие попапа добавления карточек
 profileCardAddOpenPopupButton.addEventListener('click', () => {
@@ -134,42 +121,3 @@ profileCardAddOpenPopupButton.addEventListener('click', () => {
 
 
 });
-
-// закрытие попапа профиля
-// popupCloseButtonProfile.addEventListener('click', (event) => {
-//     const clickClose = event.target.closest('.popup');
-//     closePopup(clickClose);
-//
-// });
-
-// закрытие попапа всплывающих картинок
-// popupButtonCloseImage.addEventListener('click', () => {
-//     closePopup(popupImage);
-// });
-//
-// // закрытие попапа добавления карточек
-// cardClosePopupButton.addEventListener('click', () => {
-//     closePopup(popupCard);
-//
-// });
-
-
-//оверлей попапа профайла
-// profileOverlay.addEventListener('click', function () {
-//     closePopup(popupProfileElement);
-//
-// });
-// //оверлей попапа добавления карточки
-// popupCardOverlay.addEventListener('click', function () {
-//     closePopup(popupCard);
-//
-// });
-
-//оверлей всплывающей картинки
-// popupImageOverlay.addEventListener('click', function () {
-//     closePopup(popupImage);
-//
-// });
-
-// renderCard();
-//
