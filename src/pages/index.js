@@ -51,7 +51,6 @@ const section = new Section({
 
 //сохранение карточки профиля
 const handleProfileFormFormSubmit = (data) => {
-    console.log()
     const {name, job} = data;
     userInfo.setUserInfo(name, job);
     editProfilePopup.close();
