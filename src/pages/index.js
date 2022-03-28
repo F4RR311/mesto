@@ -36,17 +36,18 @@ function createCard(item) {
     const card = new Card(item, templateElement, () => {
         imagePopup.open(item.name, item.link);
 
-
     });
 
     return card.generateCard();
 }
 
-function renderCard(card, wrap) {
-    wrap.append(createCard(card));
-}
-
-const section = new Section({items: cards, renderer: renderCard}, '.elements');
+const section = new Section({
+    items: cards,
+    renderer: (item) => {
+        const cardElement = createCard(item);
+        section.addItem(cardElement);
+    }
+}, '.elements');
 
 //сохранение карточки профиля
 const handleProfileFormFormSubmit = (data) => {

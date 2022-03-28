@@ -9,11 +9,10 @@ export class PopupWithImage extends Popup {
 
         image.src = link;
         nameEl.textContent = name;
+        nameEl.alt = name;
 
         super.open();
     }
-
-
 
 
 }
