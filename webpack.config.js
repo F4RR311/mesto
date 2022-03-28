@@ -59,11 +59,14 @@ module.exports = {
                     loader: 'css-loader',
                     // добавьте объект options
                     options: {
-                        importLoaders: 1
-                    }
+                        importLoaders: 1,
+                        modules: true,
+                    },
                 },
                     // Добавьте postcss-loader
-                    'postcss-loader']
+                    'postcss-loader'
+                ],
+                include: /\.module\.css$/,
             },
 
         ]
