@@ -16,12 +16,24 @@ class Api {
     }
 
     getInitialCards() {
-        return    fetch(`${this._baseUrl}/cards`, {
+        return fetch(`${this._baseUrl}/cards`, {
             headers: this._headers,
 
         })
             .then(res => res.ok ? res.json() : Promise.reject(res.status))
             .catch(console.log);
+    }
+
+    editProfile(name, about) {
+        return fetch(`${this._baseUrl}/users/me`, {
+            method: "PATCH",
+            headers: this._headers,
+            body: JSON.stringify({
+                name,
+                about
+            })
+
+        })
     }
 
 

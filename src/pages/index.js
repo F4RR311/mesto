@@ -24,7 +24,6 @@ api.getInitialCards()
                 name: data.name,
                 link: data.link
             });
-            // const card = createCard(data)
             section.addItem(card)
         })
 
@@ -76,7 +75,13 @@ const section = new Section({
 //сохранение карточки профиля
 const handleProfileFormFormSubmit = (data) => {
     const {name, job} = data;
-    userInfo.setUserInfo(name, job);
+
+    api.editProfile(name, job)
+        .then(res => {
+            console.log(res)
+            userInfo.setUserInfo(name, job);
+        })
+
     editProfilePopup.close();
 }
 
