@@ -4,8 +4,32 @@ import FormValidator from '../components/FormValidator.js';
 import Section from '../components/Section.js';
 import {PopupWithImage} from '../components/PopupWithImage.js';
 import {PopupWithForm} from '../components/PopupWithForm.js';
-import {cards, classData} from "../Utils/initialData.js";
+import {classData} from "../Utils/initialData.js";
 import {UserInfo} from "../components/UserInfo.js";
+import {api} from "../Utils/Api.js";
+
+
+api.getProfile()
+    .then(res => {
+
+
+        userInfo.setUserInfo(res.name, res.about);
+
+    });
+
+api.getInitialCards()
+    .then(cardList => {
+        cardList.forEach(data => {
+            const card = createCard({
+                name: data.name,
+                link: data.link
+            });
+            // const card = createCard(data)
+            section.addItem(card)
+        })
+
+    });
+
 
 //Форма профиля
 const formElementProfile = document.forms.profile;
@@ -42,7 +66,7 @@ function createCard(item) {
 }
 
 const section = new Section({
-    items: cards,
+    items: [],
     renderer: (item) => {
         const cardElement = createCard(item);
         section.addItem(cardElement);
