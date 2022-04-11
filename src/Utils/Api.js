@@ -36,6 +36,25 @@ class Api {
         })
     }
 
+    addCard(name, link) {
+        return fetch(`${this._baseUrl}/cards`, {
+            method: "POST",
+            headers: this._headers,
+            body: JSON.stringify({
+                name,
+                link
+            })
+
+        })
+    }
+
+    deleteCard(id) {
+        return fetch(`${this._baseUrl}/cards/${id}`, {
+            method: "DELETE",
+            headers: this._headers
+        })
+    }
+
 
 }
 

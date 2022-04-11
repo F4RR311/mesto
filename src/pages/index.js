@@ -22,9 +22,12 @@ api.getInitialCards()
         cardList.forEach(data => {
             const card = createCard({
                 name: data.name,
-                link: data.link
+                link: data.link,
+                likes: data.likes,
+                id: data._id
             });
             section.addItem(card)
+            addCardPopup.close();
         })
 
     });
@@ -55,11 +58,27 @@ profileValidator.enableValidation();
 const cardValidator = new FormValidator(classData, formElementCards);
 cardValidator.enableValidation();
 
-function createCard(item) {
-    const card = new Card(item, templateElement, () => {
-        imagePopup.open(item.name, item.link);
+function createCard(data) {
+    const card = new Card(
+        data,
+        templateElement,
+        () => {
+            imagePopup.open(data.name, data.link);
 
-    });
+        },
+        (id)=>{
+
+            confirmModalPopup.open();
+            confirmModalPopup.changeSubmitHandler(()=>{
+              api.deleteCard(id)
+                  .then(res =>{
+                      card.deleteCard();
+                      confirmModalPopup.close();
+                  });
+
+            });
+        }
+        );
 
     return card.generateCard();
 }
@@ -78,7 +97,6 @@ const handleProfileFormFormSubmit = (data) => {
 
     api.editProfile(name, job)
         .then(res => {
-            console.log(res)
             userInfo.setUserInfo(name, job);
         })
 
@@ -87,13 +105,21 @@ const handleProfileFormFormSubmit = (data) => {
 
 //сохранение карточки добавления картинок
 const handleCardFormSubmit = (data) => {
-    const placeName = createCard({
-        name: data.placeName,
-        link: data.placeLink
-    });
-    section.addItem(placeName);
-    addCardPopup.close();
-    cardValidator.toggleButtonState();
+
+    api.addCard(data.placeName, data.placeLink)
+        .then(res => {
+
+            const placeName = createCard({
+                name: res.name,
+                link: res.link,
+                likes: res.likes,
+                id: res._id
+            });
+            section.addItem(placeName);
+            addCardPopup.close();
+            // cardValidator.toggleButtonState();
+        })
+
 
 }
 
@@ -101,11 +127,12 @@ const imagePopup = new PopupWithImage('.popup_image');
 const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);
 const editProfilePopup = new PopupWithForm('.popup_profile', handleProfileFormFormSubmit);
 const userInfo = new UserInfo({profileNameSelector: '.profile__title', profileJobSelector: '.profile__description'});
-
+const confirmModalPopup = new PopupWithForm('.popup_delete-confirm');
 
 addCardPopup.setEventListeners();
 imagePopup.setEventListeners();
 editProfilePopup.setEventListeners();
+confirmModalPopup.setEventListeners();
 
 //окрытие попапа добавления карточек
 profileCardAddOpenPopupButton.addEventListener('click', () => {
