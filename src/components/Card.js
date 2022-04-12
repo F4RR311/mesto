@@ -8,6 +8,9 @@ export  class Card {
         this._selector = selector;
         this._handleCardClick = handleCardClick;
         this._handleCardDeleteClick = handleCardDeleteClick;
+
+        this._userId  = data.userId;
+        this._ownerId  = data.ownerId;
     }
 
     _setEventListeners() {
@@ -52,6 +55,11 @@ export  class Card {
         this._cardsElementImage.alt = this._imageName;
         this._placeElement.querySelector('.element__title').textContent = this._name;
         this._setLikes();
+
+        if(this._ownerId !== this._userId){
+            this._placeElement.querySelector('.element__delete-button').style.display = 'none';
+
+        }
         return this._placeElement;
     }
 

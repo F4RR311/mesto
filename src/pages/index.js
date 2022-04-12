@@ -8,31 +8,6 @@ import {classData} from "../Utils/initialData.js";
 import {UserInfo} from "../components/UserInfo.js";
 import {api} from "../Utils/Api.js";
 
-
-api.getProfile()
-    .then(res => {
-
-
-        userInfo.setUserInfo(res.name, res.about);
-
-    });
-
-api.getInitialCards()
-    .then(cardList => {
-        cardList.forEach(data => {
-            const card = createCard({
-                name: data.name,
-                link: data.link,
-                likes: data.likes,
-                id: data._id
-            });
-            section.addItem(card)
-            addCardPopup.close();
-        })
-
-    });
-
-
 //Форма профиля
 const formElementProfile = document.forms.profile;
 
@@ -57,6 +32,33 @@ profileValidator.enableValidation();
 
 const cardValidator = new FormValidator(classData, formElementCards);
 cardValidator.enableValidation();
+
+let userId
+
+api.getProfile()
+    .then(res => {
+    console.log(res)
+        userInfo.setUserInfo(res.name, res.about);
+    userId = res._id;
+    });
+
+api.getInitialCards()
+    .then(cardList => {
+        cardList.forEach(data => {
+            const card = createCard({
+                name: data.name,
+                link: data.link,
+                likes: data.likes,
+                id: data._id,
+                userId: userId,
+                ownerId: data.owner._id
+            });
+            section.addItem(card)
+            addCardPopup.close();
+        })
+
+    });
+
 
 function createCard(data) {
     const card = new Card(
@@ -113,7 +115,9 @@ const handleCardFormSubmit = (data) => {
                 name: res.name,
                 link: res.link,
                 likes: res.likes,
-                id: res._id
+                id: res._id,
+                userId: userId,
+                ownerId: res.owner._id
             });
             section.addItem(placeName);
             addCardPopup.close();
