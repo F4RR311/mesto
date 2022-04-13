@@ -15,7 +15,7 @@
 </header>
 <main>
     <section class="profile">
-        <img class="profile__avatar"  src= "<%=require('./images/kusto.jpg')%>"  alt="кусто">
+        <button class="profile__avatar-btn"></button>
         <div class="profile__info">
             <div class="profile__info-edit-wrap">
                 <h1 class="profile__title"> </h1>
@@ -101,8 +101,6 @@
         <form class="popup__form"  novalidate>
             <fieldset class="popup__set">
                 <h2 class="popup__title popup_delete-confirm_title">Вы уверены</h2>
-
-
                 <button type="submit"  class="popup__button">Да</button>
             </fieldset>
         </form>
@@ -120,6 +118,25 @@
     </div>
     <div class="popup__overlay"></div>
 </div>
+<div   class="popup popup_avatar">
+    <div class="popup__container">
+        <button class="popup__close" type="button" aria-label="close"></button>
+        <form class="popup__form" name="avatar" novalidate>
+            <fieldset class="popup__set">
+                <h2 class="popup__title">Обновить аватар</h2>
+                <label class="popup__form-field">
+                    <input class="popup__input"/>
+                                   </label>
+                <label class="popup__form-field">
+
+                </label>
+                <button type="submit" disabled class="popup__button">Сохранить</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="popup__overlay"></div>
+</div>
+
 <!--<script type="module" src="src/pages/index.js"></script>-->
 </body>
 </html>

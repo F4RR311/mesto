@@ -24,6 +24,9 @@ const formElementCards = document.forms.newPlace;
 // кнопка добавления карточек
 const profileCardAddOpenPopupButton = document.querySelector('.profile__add-card');
 
+//кнопка аватара
+const profileAvatarButton = document.querySelector('.profile__avatar-btn');
+
 // Доступ к временным элементам
 const templateElement = '.elements-template';
 
@@ -53,14 +56,10 @@ api.getInitialCards()
                 userId: userId,
                 ownerId: data.owner._id
             });
-
             section.addItem(card)
             addCardPopup.close();
         })
-
-
     });
-
 
 const createCard = (data) => {
     const card = new Card(
@@ -85,14 +84,11 @@ const createCard = (data) => {
                     .then(res => {
                         card.setLikes(res.likes)
                     })
-
             } else {
                 api.addLike(id)
                     .then(res => {
-                        console.log(res)
                         card.setLikes(res.likes);
                     })
-
             }
         }
     );
@@ -141,7 +137,7 @@ const handleCardFormSubmit = (data) => {
             addCardPopup.close();
             cardValidator.toggleButtonState();
         })
-        .finally(()=>{
+        .finally(() => {
             addCardPopup.isLoadingMessage(false);
         })
 
@@ -153,12 +149,18 @@ const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);
 const editProfilePopup = new PopupWithForm('.popup_profile', handleProfileFormFormSubmit);
 const userInfo = new UserInfo({profileNameSelector: '.profile__title', profileJobSelector: '.profile__description'});
 const confirmModalPopup = new PopupWithForm('.popup_delete-confirm');
+const changeAvatarPopup = new PopupWithForm('.popup_avatar');
 
+changeAvatarPopup.setEventListeners();
 addCardPopup.setEventListeners();
 imagePopup.setEventListeners();
 editProfilePopup.setEventListeners();
 confirmModalPopup.setEventListeners();
 
+//окрытие попапа редактирпования аватара
+profileAvatarButton.addEventListener('click', ()=>{
+    changeAvatarPopup.open()
+})
 //окрытие попапа добавления карточек
 profileCardAddOpenPopupButton.addEventListener('click', () => {
     addCardPopup.open();
