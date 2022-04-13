@@ -68,7 +68,6 @@ const createCard = (data) => {
         templateElement,
         () => {
             imagePopup.open(data.name, data.link);
-
         },
         (id) => {
             confirmModalPopup.open();
@@ -78,7 +77,6 @@ const createCard = (data) => {
                         card.deleteCard();
                         confirmModalPopup.close();
                     });
-
             });
         },
         (id) => {
@@ -86,14 +84,15 @@ const createCard = (data) => {
                 api.deleteLike(id)
                     .then(res => {
                         card.setLikes(res.likes)
-
                     })
+
             } else {
                 api.addLike(id)
                     .then(res => {
-                        card.setLikes(res.likes)
-
+                        console.log(res)
+                        card.setLikes(res.likes);
                     })
+
             }
         }
     );
@@ -111,6 +110,7 @@ const section = new Section({
 
 //сохранение карточки профиля
 const handleProfileFormFormSubmit = (data) => {
+    editProfilePopup.isLoadingMessage(true)
     const {name, job} = data;
 
     api.editProfile(name, job)
@@ -123,7 +123,7 @@ const handleProfileFormFormSubmit = (data) => {
 
 //сохранение карточки добавления картинок
 const handleCardFormSubmit = (data) => {
-
+    addCardPopup.isLoadingMessage(true)
     api.addCard(data.placeName, data.placeLink)
         .then(res => {
 
@@ -137,8 +137,12 @@ const handleCardFormSubmit = (data) => {
             });
 
             section.addItem(placeName);
+            addCardPopup.isLoadingMessage(true);
             addCardPopup.close();
             cardValidator.toggleButtonState();
+        })
+        .finally(()=>{
+            addCardPopup.isLoadingMessage(false);
         })
 
 

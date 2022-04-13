@@ -52,7 +52,7 @@ export class Card {
 
 
     setLikes(newLikes) {
-        console.log(newLikes)
+
         this._likes = newLikes;
         const likeCountElement = this._placeElement.querySelector('.element__button-heart-count');
         likeCountElement.textContent = this._likes.length;
@@ -67,7 +67,7 @@ export class Card {
     generateCard() {
         this._placeElement = this._getTemplateElement();
         this._cardsElementImage = this._placeElement.querySelector('.element__image');
-        this.setLikes(this._likes);
+
 
         if (this._ownerId !== this._userId) {
             this._placeElement.querySelector('.element__delete-button').style.display = 'none';
@@ -79,7 +79,7 @@ export class Card {
 
 
         this._setEventListeners();
-
+        this.setLikes(this._likes);
 
         return this._placeElement;
     }
