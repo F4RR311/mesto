@@ -37,9 +37,9 @@ let userId
 
 api.getProfile()
     .then(res => {
-    console.log(res)
+
         userInfo.setUserInfo(res.name, res.about);
-    userId = res._id;
+        userId = res._id;
     });
 
 api.getInitialCards()
@@ -53,14 +53,16 @@ api.getInitialCards()
                 userId: userId,
                 ownerId: data.owner._id
             });
+
             section.addItem(card)
             addCardPopup.close();
         })
 
+
     });
 
 
-function createCard(data) {
+const createCard = (data) => {
     const card = new Card(
         data,
         templateElement,
@@ -68,19 +70,33 @@ function createCard(data) {
             imagePopup.open(data.name, data.link);
 
         },
-        (id)=>{
-
+        (id) => {
             confirmModalPopup.open();
-            confirmModalPopup.changeSubmitHandler(()=>{
-              api.deleteCard(id)
-                  .then(res =>{
-                      card.deleteCard();
-                      confirmModalPopup.close();
-                  });
+            confirmModalPopup.changeSubmitHandler(() => {
+                api.deleteCard(id)
+                    .then(res => {
+                        card.deleteCard();
+                        confirmModalPopup.close();
+                    });
 
             });
+        },
+        (id) => {
+            if (card.isLiked()) {
+                api.deleteLike(id)
+                    .then(res => {
+                        card.setLikes(res.likes)
+
+                    })
+            } else {
+                api.addLike(id)
+                    .then(res => {
+                        card.setLikes(res.likes)
+
+                    })
+            }
         }
-        );
+    );
 
     return card.generateCard();
 }
@@ -119,9 +135,10 @@ const handleCardFormSubmit = (data) => {
                 userId: userId,
                 ownerId: res.owner._id
             });
+
             section.addItem(placeName);
             addCardPopup.close();
-            // cardValidator.toggleButtonState();
+            cardValidator.toggleButtonState();
         })
 
 
