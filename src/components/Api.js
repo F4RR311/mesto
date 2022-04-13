@@ -80,6 +80,15 @@ class Api {
             .then(res => res.ok ? res.json() : Promise.reject(res.status))
             .catch(console.log);
     }
+    addAvatar() {
+        return fetch(`${this._baseUrl}/users/me/avatar`, {
+            method: "PATCH ",
+            headers: this._headers,
+
+        })
+            .then(res => res.ok ? res.json() : Promise.reject(res.status))
+            .catch(console.log);
+    }
 
 }
 

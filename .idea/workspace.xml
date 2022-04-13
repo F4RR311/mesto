@@ -31,9 +31,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="likes+isloading">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="avatar">
+      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar-btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-btn/profile__avatar-btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
@@ -73,26 +76,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-44e4bff00f06d1f2268fdb7dbd0b10e23090709c" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src" />
-      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\pages" />
-      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\scripts" />
-      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\components" />
-      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Yandex practicum\fourth-sprint\mesto" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\components" />
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src" />
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\pages" />
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\scripts" />
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\images" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.Api.js">
-    <configuration name="Api.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/Utils/Api.js" working-dir="$PROJECT_DIR$/src/Utils">
+    <configuration name="Api.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/Api.js" working-dir="$PROJECT_DIR$/src/Utils">
       <method v="2" />
     </configuration>
     <configuration name="Card.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/components/Card.js" working-dir="$PROJECT_DIR$/src/scripts">
@@ -206,14 +209,7 @@
       <workItem from="1649862820043" duration="1680000" />
       <workItem from="1649871907507" duration="27000" />
       <workItem from="1649871941844" duration="2732000" />
-      <workItem from="1649879976925" duration="2445000" />
-    </task>
-    <task id="LOCAL-00016" summary="new develop1">
-      <created>1643402030368</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1643402030368</updated>
+      <workItem from="1649879976925" duration="6658000" />
     </task>
     <task id="LOCAL-00017" summary="initial commit">
       <created>1643402356928</created>
@@ -551,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649884445648</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="avatar">
+      <created>1649885555714</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1649885555714</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finish esc closest" />
     <MESSAGE value="2-nd fix" />
     <MESSAGE value="3-nd fix" />
     <MESSAGE value="OOP start develop" />
@@ -607,7 +609,8 @@
     <MESSAGE value="addCard" />
     <MESSAGE value="delete-button" />
     <MESSAGE value="likes+isloading" />
-    <option name="LAST_COMMIT_MESSAGE" value="likes+isloading" />
+    <MESSAGE value="avatar" />
+    <option name="LAST_COMMIT_MESSAGE" value="avatar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1249" y="330" key="#Custom_Plugin_Repositories" timestamp="1647378084663">
@@ -627,11 +630,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="92" y="92" width="1736" height="848" key="DiffContextDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1648160370872" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1649879901656">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1649891796913">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1649806951120" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1649879901656" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1649891796913" />
     <state x="817" y="416" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1647380909013">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -665,11 +668,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1649884448320">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1649885558129">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1649884448320" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1649885558129" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>

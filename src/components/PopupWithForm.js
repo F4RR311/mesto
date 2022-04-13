@@ -29,7 +29,9 @@ export class PopupWithForm extends Popup {
         })
         return values;
     }
-
+    getFormValues(){
+        return this._getInputValues()
+    }
 
     close() {
         super.close();

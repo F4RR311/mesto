@@ -6,7 +6,7 @@ import {PopupWithImage} from '../components/PopupWithImage.js';
 import {PopupWithForm} from '../components/PopupWithForm.js';
 import {classData} from "../Utils/initialData.js";
 import {UserInfo} from "../components/UserInfo.js";
-import {api} from "../Utils/Api.js";
+import {api} from "../components/Api.js";
 
 //Форма профиля
 const formElementProfile = document.forms.profile;
@@ -143,24 +143,51 @@ const handleCardFormSubmit = (data) => {
 
 
 }
+// const handleAvatarSubmit = (data) => {
+//     changeAvatarPopup.isLoadingMessage(true)
+//
+//     const formValues = changeAvatarPopup.getFormValues();
+//     api.addAvatar()
+//         .then(res => {
+//
+//             const placeName = createCard({
+//                 name: res.name,
+//                 link: res.link,
+//                 likes: res.likes,
+//                 id: res._id,
+//                 userId: userId,
+//                 ownerId: res.owner._id
+//             });
+//
+//             section.addItem(placeName);
+//             addCardPopup.isLoadingMessage(true);
+//             addCardPopup.close();
+//             cardValidator.toggleButtonState();
+//         })
+//         .finally(() => {
+//             addCardPopup.isLoadingMessage(false);
+//         })
+//
+//
+// }
 
 const imagePopup = new PopupWithImage('.popup_image');
 const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);
 const editProfilePopup = new PopupWithForm('.popup_profile', handleProfileFormFormSubmit);
 const userInfo = new UserInfo({profileNameSelector: '.profile__title', profileJobSelector: '.profile__description'});
 const confirmModalPopup = new PopupWithForm('.popup_delete-confirm');
-const changeAvatarPopup = new PopupWithForm('.popup_avatar');
+//const changeAvatarPopup = new PopupWithForm('.popup_avatar',handleAvatarSubmit);
 
-changeAvatarPopup.setEventListeners();
+//changeAvatarPopup.setEventListeners();
 addCardPopup.setEventListeners();
 imagePopup.setEventListeners();
 editProfilePopup.setEventListeners();
 confirmModalPopup.setEventListeners();
 
 //окрытие попапа редактирпования аватара
-profileAvatarButton.addEventListener('click', ()=>{
-    changeAvatarPopup.open()
-})
+// profileAvatarButton.addEventListener('click', ()=>{
+//     changeAvatarPopup.open()
+// })
 //окрытие попапа добавления карточек
 profileCardAddOpenPopupButton.addEventListener('click', () => {
     addCardPopup.open();
