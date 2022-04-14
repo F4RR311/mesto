@@ -21,6 +21,9 @@ const jobInput = formElementProfile.elements.job;
 //Попап карточек
 const formElementCards = document.forms.newPlace;
 
+//Попап аватара
+const avatarPopup = document.forms.avatar;
+
 // кнопка добавления карточек
 const profileCardAddOpenPopupButton = document.querySelector('.profile__add-card');
 
@@ -36,11 +39,14 @@ profileValidator.enableValidation();
 const cardValidator = new FormValidator(classData, formElementCards);
 cardValidator.enableValidation();
 
+const avatarValidator = new FormValidator(classData, avatarPopup);
+avatarValidator.enableValidation();
+
 let userId
 
 api.getProfile()
     .then(res => {
-
+        console.log(res)
         userInfo.setUserInfo(res.name, res.about);
         userId = res._id;
     });
@@ -104,19 +110,6 @@ const section = new Section({
     }
 }, '.elements');
 
-//сохранение карточки профиля
-const handleProfileFormFormSubmit = (data) => {
-    editProfilePopup.isLoadingMessage(true)
-    const {name, job} = data;
-
-    api.editProfile(name, job)
-        .then(res => {
-            userInfo.setUserInfo(name, job);
-        })
-
-    editProfilePopup.close();
-}
-
 //сохранение карточки добавления картинок
 const handleCardFormSubmit = (data) => {
     addCardPopup.isLoadingMessage(true)
@@ -131,7 +124,6 @@ const handleCardFormSubmit = (data) => {
                 userId: userId,
                 ownerId: res.owner._id
             });
-
             section.addItem(placeName);
             addCardPopup.isLoadingMessage(true);
             addCardPopup.close();
@@ -140,54 +132,56 @@ const handleCardFormSubmit = (data) => {
         .finally(() => {
             addCardPopup.isLoadingMessage(false);
         })
+}
+
+//сохранение карточки профиля
+const handleProfileFormFormSubmit = (data) => {
+    editProfilePopup.isLoadingMessage(true)
+    const {name, job} = data;
+
+    api.editProfile(name, job)
+        .then(res => {
+            userInfo.setUserInfo(name, job);
+        })
+
+    editProfilePopup.close();
+}
+
+//сохранение аватара профиля
+const handleAvatarSubmit = (data) => {
+    changeAvatarPopup.isLoadingMessage(true)
+
+    api.addAvatar()
+        .then(res => {
+            userInfo.setUserInfo(res.avatar);
+            console.log(res)
+
+            changeAvatarPopup.close();
+
+        })
 
 
 }
-// const handleAvatarSubmit = (data) => {
-//     changeAvatarPopup.isLoadingMessage(true)
-//
-//     const formValues = changeAvatarPopup.getFormValues();
-//     api.addAvatar()
-//         .then(res => {
-//
-//             const placeName = createCard({
-//                 name: res.name,
-//                 link: res.link,
-//                 likes: res.likes,
-//                 id: res._id,
-//                 userId: userId,
-//                 ownerId: res.owner._id
-//             });
-//
-//             section.addItem(placeName);
-//             addCardPopup.isLoadingMessage(true);
-//             addCardPopup.close();
-//             cardValidator.toggleButtonState();
-//         })
-//         .finally(() => {
-//             addCardPopup.isLoadingMessage(false);
-//         })
-//
-//
-// }
 
 const imagePopup = new PopupWithImage('.popup_image');
 const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);
 const editProfilePopup = new PopupWithForm('.popup_profile', handleProfileFormFormSubmit);
-const userInfo = new UserInfo({profileNameSelector: '.profile__title', profileJobSelector: '.profile__description'});
+const userInfo = new UserInfo({
+    profileNameSelector: '.profile__title', profileJobSelector: '.profile__description',
+    profileAvatarSelector: '.profile__avatar'});
 const confirmModalPopup = new PopupWithForm('.popup_delete-confirm');
-//const changeAvatarPopup = new PopupWithForm('.popup_avatar',handleAvatarSubmit);
+const changeAvatarPopup = new PopupWithForm('.popup_avatar', handleAvatarSubmit)
 
-//changeAvatarPopup.setEventListeners();
+changeAvatarPopup.setEventListeners();
 addCardPopup.setEventListeners();
 imagePopup.setEventListeners();
 editProfilePopup.setEventListeners();
 confirmModalPopup.setEventListeners();
 
 //окрытие попапа редактирпования аватара
-// profileAvatarButton.addEventListener('click', ()=>{
-//     changeAvatarPopup.open()
-// })
+profileAvatarButton.addEventListener('click', () => {
+    changeAvatarPopup.open()
+})
 //окрытие попапа добавления карточек
 profileCardAddOpenPopupButton.addEventListener('click', () => {
     addCardPopup.open();

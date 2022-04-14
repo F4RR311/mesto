@@ -34,6 +34,8 @@ class Api {
             })
 
         })
+            .then(res => res.ok ? res.json() : Promise.reject(res.status))
+            .catch(console.log);
     }
 
     addCard(name, link) {

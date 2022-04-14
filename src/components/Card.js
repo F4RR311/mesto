@@ -34,11 +34,6 @@ export class Card {
     }
 
 
-    // _handleLikeButtonClick() {
-    //     this._placeElement.querySelector('.element__button-heart')
-    //         .classList.toggle('element__button-heart_liked')
-    //
-    // }
 
     deleteCard() {
         this._placeElement.remove();
