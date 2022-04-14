@@ -9,13 +9,14 @@ export  class UserInfo {
         return {
             name: this._userNameElement.textContent,
             job: this._userJobElement.textContent
+
         }
     }
 
-    setUserInfo(title, job, avatarLink) {
+    setUserInfo(title, job, avatar) {
         this._userNameElement.textContent = title;
         this._userJobElement.textContent = job;
-        this._profileAvatarElement.src = avatarLink;
+        this._profileAvatarElement.src = avatar;
     }
 
 

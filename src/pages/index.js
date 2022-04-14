@@ -23,6 +23,7 @@ const formElementCards = document.forms.newPlace;
 
 //Попап аватара
 const avatarPopup = document.forms.avatar;
+const userAvatar = document.querySelector('.profile__avatar');
 
 // кнопка добавления карточек
 const profileCardAddOpenPopupButton = document.querySelector('.profile__add-card');
@@ -46,8 +47,8 @@ let userId
 
 api.getProfile()
     .then(res => {
-        console.log(res)
-        userInfo.setUserInfo(res.name, res.about);
+        //  console.log(res)
+        userInfo.setUserInfo(res.name, res.about, res.avatar);
         userId = res._id;
     });
 
@@ -138,37 +139,32 @@ const handleCardFormSubmit = (data) => {
 const handleProfileFormFormSubmit = (data) => {
     editProfilePopup.isLoadingMessage(true)
     const {name, job} = data;
-
     api.editProfile(name, job)
         .then(res => {
             userInfo.setUserInfo(name, job);
         })
-
     editProfilePopup.close();
 }
 
 //сохранение аватара профиля
 const handleAvatarSubmit = (data) => {
     changeAvatarPopup.isLoadingMessage(true)
-
-    api.addAvatar()
+    api.addAvatar(data)
         .then(res => {
             userInfo.setUserInfo(res.avatar);
-            console.log(res)
-
             changeAvatarPopup.close();
-
-        })
-
-
+        }).finally(() => {
+        changeAvatarPopup.isLoadingMessage(false);
+    })
 }
-
 const imagePopup = new PopupWithImage('.popup_image');
 const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);
 const editProfilePopup = new PopupWithForm('.popup_profile', handleProfileFormFormSubmit);
 const userInfo = new UserInfo({
-    profileNameSelector: '.profile__title', profileJobSelector: '.profile__description',
-    profileAvatarSelector: '.profile__avatar'});
+    profileNameSelector: '.profile__title',
+    profileJobSelector: '.profile__description',
+    profileAvatarSelector: '.profile__avatar'
+});
 const confirmModalPopup = new PopupWithForm('.popup_delete-confirm');
 const changeAvatarPopup = new PopupWithForm('.popup_avatar', handleAvatarSubmit)
 
