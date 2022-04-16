@@ -2,7 +2,7 @@
 
  Сайт «Место».
  Написан на чистом HTML+CSS+JS.
- Ппрект доступен  по ссылке [на GitHub Pages](https://f4rr311.github.io/mesto/index.html)
+ Ппрект доступен  по ссылке [на GitHub Pages](https://f4rr311.github.io/mesto/)
  
 **Макет Figma**
 

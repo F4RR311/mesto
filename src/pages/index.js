@@ -47,7 +47,6 @@ let userId
 
 api.getProfile()
     .then(res => {
-
         userInfo.setUserInfo(res.name, res.about, res.avatar);
         userId = res._id;
     });
@@ -125,7 +124,6 @@ const handleCardFormSubmit = (data) => {
                 ownerId: res.owner._id
             });
             section.addItem(placeName);
-            addCardPopup.isLoadingMessage(true);
             addCardPopup.close();
             cardValidator.toggleButtonState();
         })
@@ -140,7 +138,6 @@ const handleProfileFormFormSubmit = (data) => {
     const {name, job} = data;
     api.editProfile(name, job)
         .then(res => {
-            console.log(res)
             userInfo.setUserInfo(name, job);
         })
     editProfilePopup.close();
@@ -189,6 +186,7 @@ profileOpenPopupButton.addEventListener('click', () => {
     const {name, job} = userInfo.getUserInfo()
     nameInput.value = name;
     jobInput.value = job;
+
     editProfilePopup.open();
 });
 
