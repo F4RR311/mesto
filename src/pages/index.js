@@ -102,20 +102,12 @@ const createCard = (data) => {
     return card.generateCard();
 }
 
-const section = new Section({
-    items: [],
-    renderer: (item) => {
-        const cardElement = createCard(item);
-        section.addItem(cardElement);
-    }
-}, '.elements');
-
-//сохранение карточки добавления картинок
+//добавление картинок
 const handleCardFormSubmit = (data) => {
     addCardPopup.isLoadingMessage(true)
     api.addCard(data.placeName, data.placeLink)
         .then(res => {
-            const placeName = createCard({
+            const card = createCard({
                 name: res.name,
                 link: res.link,
                 likes: res.likes,
@@ -123,7 +115,7 @@ const handleCardFormSubmit = (data) => {
                 userId: userId,
                 ownerId: res.owner._id
             });
-            section.addItem(placeName);
+            section.addItem(card);
             addCardPopup.close();
             cardValidator.toggleButtonState();
         })
@@ -155,8 +147,15 @@ const handleAvatarSubmit = (data) => {
             changeAvatarPopup.isLoadingMessage(false);
         })
 }
+const section = new Section({
+    items: [],
+    renderer: (item) => {
+        const cardElement = createCard(item);
+        section.addItem(cardElement);
+    }
+}, '.elements');
 const imagePopup = new PopupWithImage('.popup_image');
-const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);
+const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit)
 const editProfilePopup = new PopupWithForm('.popup_profile', handleProfileFormFormSubmit);
 const userInfo = new UserInfo({
     profileNameSelector: '.profile__title',
