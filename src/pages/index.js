@@ -22,8 +22,8 @@ const jobInput = formElementProfile.elements.job;
 const formElementCards = document.forms.newPlace;
 
 //Попап аватара
-const avatarPopup = document.forms.avatar;
-const userAvatar = document.querySelector('.profile__avatar');
+const avatarPopup = document.forms.avatarForm;
+
 
 // кнопка добавления карточек
 const profileCardAddOpenPopupButton = document.querySelector('.profile__add-card');
@@ -47,7 +47,7 @@ let userId
 
 api.getProfile()
     .then(res => {
-        //  console.log(res)
+
         userInfo.setUserInfo(res.name, res.about, res.avatar);
         userId = res._id;
     });
@@ -116,7 +116,6 @@ const handleCardFormSubmit = (data) => {
     addCardPopup.isLoadingMessage(true)
     api.addCard(data.placeName, data.placeLink)
         .then(res => {
-
             const placeName = createCard({
                 name: res.name,
                 link: res.link,
@@ -141,6 +140,7 @@ const handleProfileFormFormSubmit = (data) => {
     const {name, job} = data;
     api.editProfile(name, job)
         .then(res => {
+            console.log(res)
             userInfo.setUserInfo(name, job);
         })
     editProfilePopup.close();
@@ -149,13 +149,14 @@ const handleProfileFormFormSubmit = (data) => {
 //сохранение аватара профиля
 const handleAvatarSubmit = (data) => {
     changeAvatarPopup.isLoadingMessage(true)
-    api.addAvatar(data)
+    api.addAvatar(data.avatar)
         .then(res => {
-            userInfo.setUserInfo(res.avatar);
+            userInfo.setUserInfo(res.name, res.about, res.avatar);
             changeAvatarPopup.close();
-        }).finally(() => {
-        changeAvatarPopup.isLoadingMessage(false);
-    })
+        })
+        .finally(() => {
+            changeAvatarPopup.isLoadingMessage(false);
+        })
 }
 const imagePopup = new PopupWithImage('.popup_image');
 const addCardPopup = new PopupWithForm('.popup_place', handleCardFormSubmit);

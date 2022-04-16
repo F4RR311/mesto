@@ -16,7 +16,7 @@
 <main>
     <section class="profile">
         <button class="profile__avatar-btn" type="button" title="Обновить аватар">
-            <img class="profile__avatar"  name="avatar" src="<%=require('./images/kusto.jpg')%>"
+            <img class="profile__avatar" src="#"
                  alt="Аватар профиля"></button>
         <div class="profile__info">
             <div class="profile__info-edit-wrap">
@@ -123,12 +123,12 @@
 <div class="popup popup_avatar">
     <div class="popup__container">
         <button class="popup__close" type="button" aria-label="close"></button>
-        <form class="popup__form" name="avatar" novalidate>
+        <form class="popup__form" name="avatarForm" novalidate>
             <fieldset class="popup__set">
                 <h2 class="popup__title">Обновить аватар</h2>
                 <label class="popup__form-field">
                     <input class="popup__input" id="popup__placeAvatar-input"
-                           placeholder="Ссылка на картинку" required type="url"/>
+                          name="avatar" placeholder="Ссылка на картинку" required type="url"/>
                     <span id="popup__placeAvatar-input-error" class="popup__input-error"></span>
                 </label>
                 <button type="submit" disabled class="popup__button" >Сохранить</button>
