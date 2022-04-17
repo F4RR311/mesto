@@ -59,7 +59,6 @@ Promise.all([api.getProfile(), api.getInitialCards()])
                 ownerId: data.owner._id
             })
             section.addItem(card)
-            addCardPopup.close();
         })
     })
     .catch(err => {
@@ -125,14 +124,13 @@ const handleCardFormSubmit = (data) => {
                 ownerId: res.owner._id
             });
             section.addItem(card);
-
+            addCardPopup.close();
+            cardValidator.toggleButtonState();
         })
         .catch(err => {
             console.log('Error', err);
         })
         .finally(() => {
-            addCardPopup.close();
-            cardValidator.enableValidation();
             addCardPopup.isLoadingMessage(false);
         })
 }
@@ -143,14 +141,14 @@ const handleProfileFormFormSubmit = (data) => {
     const {name, job} = data;
     api.editProfile(name, job)
         .then(res => {
-            userInfo.setUserInfo(name, job);
+            userInfo.setUserInfo(name, job, res.avatar);
+            editProfilePopup.close();
+            profileValidator.toggleButtonState();
         })
         .catch(err => {
             console.log('Error', err);
         })
         .finally(() => {
-            editProfilePopup.close();
-            profileValidator.enableValidation();
             editProfilePopup.isLoadingMessage(false)
         })
 
@@ -162,13 +160,13 @@ const handleAvatarSubmit = (data) => {
     api.addAvatar(data.avatar)
         .then(res => {
             userInfo.setUserInfo(res.name, res.about, res.avatar);
+            changeAvatarPopup.close();
+            avatarValidator.toggleButtonState();
         })
         .catch(err => {
             console.log('Error', err);
         })
         .finally(() => {
-            changeAvatarPopup.close();
-            avatarValidator.enableValidation();
             changeAvatarPopup.isLoadingMessage(false);
         })
 }
@@ -187,6 +185,7 @@ const userInfo = new UserInfo({
     profileJobSelector: '.profile__description',
     profileAvatarSelector: '.profile__avatar'
 });
+
 const confirmModalPopup = new PopupWithForm('.popup_delete-confirm');
 const changeAvatarPopup = new PopupWithForm('.popup_avatar', handleAvatarSubmit)
 

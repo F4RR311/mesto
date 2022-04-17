@@ -31,14 +31,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="auto-test">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="review fix-1">
+      <change afterPath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/initialData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/initialData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PopupWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -219,13 +219,8 @@
       <workItem from="1650124305523" duration="6356000" />
       <workItem from="1650143449726" duration="952000" />
       <workItem from="1650184896415" duration="5845000" />
-    </task>
-    <task id="LOCAL-00024" summary="some review fix">
-      <created>1643668727873</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1643668727873</updated>
+      <workItem from="1650190969637" duration="1710000" />
+      <workItem from="1650199260231" duration="4660000" />
     </task>
     <task id="LOCAL-00025" summary="finish fix">
       <created>1643751424522</created>
@@ -563,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650130544055</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="review fix-1">
+      <created>1650191154166</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1650191154166</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +596,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finish" />
     <MESSAGE value="fix button" />
     <MESSAGE value="fix 1-st review" />
     <MESSAGE value="popups closest" />
@@ -619,7 +620,8 @@
     <MESSAGE value="readme" />
     <MESSAGE value="100%" />
     <MESSAGE value="auto-test" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto-test" />
+    <MESSAGE value="review fix-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="review fix-1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1249" y="330" key="#Custom_Plugin_Repositories" timestamp="1647378084663">
@@ -631,19 +633,19 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="714" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643652610930" />
-    <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1647629968019">
+    <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1650191021275">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647629968019" />
+    <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650191021275" />
     <state x="92" y="92" width="1736" height="848" key="DiffContextDialog" timestamp="1648160370872">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="92" y="92" width="1736" height="848" key="DiffContextDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1648160370872" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1650186086321">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1650201397064">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1650126350697" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650186086321" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650201397064" />
     <state x="817" y="416" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1647380909013">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -677,11 +679,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650130546187">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650191159016">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650130546187" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650191159016" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
