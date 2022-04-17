@@ -7,6 +7,7 @@ import {PopupWithForm} from '../components/PopupWithForm.js';
 import {classData} from "../Utils/initialData.js";
 import {UserInfo} from "../components/UserInfo.js";
 import {api} from "../components/Api.js";
+import {PopupWithConfirm} from "../components/PopupWithConfirm";
 
 //Форма профиля
 const formElementProfile = document.forms.profile;
@@ -72,10 +73,11 @@ const createCard = (data) => {
         () => {
             imagePopup.open(data.name, data.link);
         },
+        //удаляем карточку
         (id) => {
             confirmModalPopup.open();
-            confirmModalPopup.changeSubmitHandler(() => {
-                api.deleteCard(id)
+            confirmModalPopup.setSubmitAction(() => {
+                api.removeCard(id)
                     .then(res => {
                         card.deleteCard();
                         confirmModalPopup.close();
@@ -89,7 +91,7 @@ const createCard = (data) => {
             if (card.isLiked()) {
                 api.deleteLike(id)
                     .then(res => {
-                        card.setLikes(res.likess)
+                        card.setLikes(res.likes)
                     })
                     .catch(err => {
                         console.log('Error', err);
@@ -186,14 +188,17 @@ const userInfo = new UserInfo({
     profileAvatarSelector: '.profile__avatar'
 });
 
-const confirmModalPopup = new PopupWithForm('.popup_delete-confirm');
+const confirmModalPopup = new PopupWithConfirm('.popup_delete-confirm');
+confirmModalPopup.setEventListeners();
+
 const changeAvatarPopup = new PopupWithForm('.popup_avatar', handleAvatarSubmit)
+
 
 changeAvatarPopup.setEventListeners();
 addCardPopup.setEventListeners();
 imagePopup.setEventListeners();
 editProfilePopup.setEventListeners();
-confirmModalPopup.setEventListeners();
+
 
 //окрытие попапа редактирпования аватара
 profileAvatarButton.addEventListener('click', () => {

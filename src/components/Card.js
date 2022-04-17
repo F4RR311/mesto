@@ -34,7 +34,6 @@ export class Card {
     }
 
 
-
     deleteCard() {
         this._placeElement.remove();
 
@@ -91,6 +90,9 @@ export class Card {
             .classList.remove('element__button-heart_liked');
 
 
+    }
+    getCardId() {
+        return this._cardId;
     }
 
 

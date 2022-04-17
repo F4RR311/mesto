@@ -31,13 +31,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="review fix-1">
-      <change afterPath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" afterDir="false" />
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/initialData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/initialData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-be0d8aa055e85b1b63a6d9ca20f57e89ce0c5757" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-main" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -220,14 +219,10 @@
       <workItem from="1650143449726" duration="952000" />
       <workItem from="1650184896415" duration="5845000" />
       <workItem from="1650190969637" duration="1710000" />
-      <workItem from="1650199260231" duration="4660000" />
-    </task>
-    <task id="LOCAL-00025" summary="finish fix">
-      <created>1643751424522</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1643751424522</updated>
+      <workItem from="1650199260231" duration="6049000" />
+      <workItem from="1650205472036" duration="4009000" />
+      <workItem from="1650209553002" duration="3467000" />
+      <workItem from="1650213057951" duration="236000" />
     </task>
     <task id="LOCAL-00026" summary="auto-test-bugs -- fix">
       <created>1643751753483</created>
@@ -565,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650191154166</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="review fix-1">
+      <created>1650203975166</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1650203975166</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,11 +643,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="92" y="92" width="1736" height="848" key="DiffContextDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1648160370872" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1650201397064">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1650212142832">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1650126350697" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650201397064" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650212142832" />
     <state x="817" y="416" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1647380909013">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -679,19 +681,23 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650191159016">
+    <state x="846" y="430" key="VCS.EditChangelistDialog" timestamp="1650204003561">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="846" y="430" key="VCS.EditChangelistDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650204003561" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650204012046">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650191159016" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650204012046" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
     <state x="-1418" y="203" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1642363194005" />
-    <state x="616" y="353" width="672" height="678" key="search.everywhere.popup" timestamp="1648326813024">
+    <state x="616" y="353" width="672" height="678" key="search.everywhere.popup" timestamp="1650204960761">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1427" y="283" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1647378173033" />
-    <state x="616" y="353" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1648326813024" />
+    <state x="616" y="353" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650204960761" />
   </component>
 </project>
