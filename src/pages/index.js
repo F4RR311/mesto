@@ -45,15 +45,11 @@ avatarValidator.enableValidation();
 
 let userId
 
-api.getProfile()
-    .then(res => {
-        userInfo.setUserInfo(res.name, res.about, res.avatar);
-        userId = res._id;
-    });
-
-api.getInitialCards()
-    .then(cardList => {
-        cardList.forEach(data => {
+Promise.all([api.getProfile(), api.getInitialCards()])
+    .then(([userData, cards]) => {
+        userInfo.setUserInfo(userData.name, userData.about, userData.avatar);
+        userId = userData._id;
+        cards.forEach(data => {
             const card = createCard({
                 name: data.name,
                 link: data.link,
@@ -61,10 +57,13 @@ api.getInitialCards()
                 id: data._id,
                 userId: userId,
                 ownerId: data.owner._id
-            });
+            })
             section.addItem(card)
             addCardPopup.close();
         })
+    })
+    .catch(err => {
+        console.log('Error', err);
     });
 
 const createCard = (data) => {
@@ -81,6 +80,9 @@ const createCard = (data) => {
                     .then(res => {
                         card.deleteCard();
                         confirmModalPopup.close();
+                    })
+                    .catch(err => {
+                        console.log('Error', err);
                     });
             });
         },
@@ -88,13 +90,20 @@ const createCard = (data) => {
             if (card.isLiked()) {
                 api.deleteLike(id)
                     .then(res => {
-                        card.setLikes(res.likes)
+                        card.setLikes(res.likess)
                     })
+                    .catch(err => {
+                        console.log('Error', err);
+                    });
             } else {
                 api.addLike(id)
                     .then(res => {
                         card.setLikes(res.likes);
                     })
+                    .catch(err => {
+                        console.log('Error', err);
+                    });
+
             }
         }
     );
@@ -116,10 +125,14 @@ const handleCardFormSubmit = (data) => {
                 ownerId: res.owner._id
             });
             section.addItem(card);
-            addCardPopup.close();
-            cardValidator.toggleButtonState();
+
+        })
+        .catch(err => {
+            console.log('Error', err);
         })
         .finally(() => {
+            addCardPopup.close();
+            cardValidator.enableValidation();
             addCardPopup.isLoadingMessage(false);
         })
 }
@@ -132,7 +145,15 @@ const handleProfileFormFormSubmit = (data) => {
         .then(res => {
             userInfo.setUserInfo(name, job);
         })
-    editProfilePopup.close();
+        .catch(err => {
+            console.log('Error', err);
+        })
+        .finally(() => {
+            editProfilePopup.close();
+            profileValidator.enableValidation();
+            editProfilePopup.isLoadingMessage(false)
+        })
+
 }
 
 //сохранение аватара профиля
@@ -141,9 +162,13 @@ const handleAvatarSubmit = (data) => {
     api.addAvatar(data.avatar)
         .then(res => {
             userInfo.setUserInfo(res.name, res.about, res.avatar);
-            changeAvatarPopup.close();
+        })
+        .catch(err => {
+            console.log('Error', err);
         })
         .finally(() => {
+            changeAvatarPopup.close();
+            avatarValidator.enableValidation();
             changeAvatarPopup.isLoadingMessage(false);
         })
 }

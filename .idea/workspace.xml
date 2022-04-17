@@ -31,9 +31,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="100%">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="auto-test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,14 +216,9 @@
       <workItem from="1650104683171" duration="6817000" />
       <workItem from="1650112358088" duration="1014000" />
       <workItem from="1650113746785" duration="9617000" />
-      <workItem from="1650124305523" duration="5581000" />
-    </task>
-    <task id="LOCAL-00023" summary="fix auto-test bugs">
-      <created>1643500875270</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1643500875270</updated>
+      <workItem from="1650124305523" duration="6356000" />
+      <workItem from="1650143449726" duration="952000" />
+      <workItem from="1650184896415" duration="5845000" />
     </task>
     <task id="LOCAL-00024" summary="some review fix">
       <created>1643668727873</created>
@@ -556,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650129883361</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="auto-test">
+      <created>1650130544055</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1650130544055</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +594,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="processing..." />
     <MESSAGE value="finish" />
     <MESSAGE value="fix button" />
     <MESSAGE value="fix 1-st review" />
@@ -612,7 +618,8 @@
     <MESSAGE value="addAvatar" />
     <MESSAGE value="readme" />
     <MESSAGE value="100%" />
-    <option name="LAST_COMMIT_MESSAGE" value="100%" />
+    <MESSAGE value="auto-test" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto-test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1249" y="330" key="#Custom_Plugin_Repositories" timestamp="1647378084663">
@@ -632,11 +639,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="92" y="92" width="1736" height="848" key="DiffContextDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1648160370872" />
-    <state x="-1328" y="217" key="FileChooserDialogImpl" timestamp="1650126350697">
-      <screen x="-1920" y="0" width="1536" height="826" />
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1650186086321">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1650126350697" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650125087014" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650186086321" />
     <state x="817" y="416" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1647380909013">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -670,11 +677,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650129988142">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650130546187">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650129988142" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650130546187" />
     <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
