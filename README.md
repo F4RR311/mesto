@@ -37,7 +37,7 @@
 
 Клонировать репозиторий:
 
-    git clone https://f4rr311.github.io/mesto/
+    git clone https://github.com/F4RR311/mesto.git
 
 Установить зависимости:
 
