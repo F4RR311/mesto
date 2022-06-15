@@ -31,12 +31,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="">
+    <list default="true" id="3e947aed-d1c3-4a2d-9dcc-6ee318cedd4b" name="Default Changelist" comment="add popupwithconfirm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__button-heart/_liked/element__button-heart_liked.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__button-heart/_liked/element__button-heart_liked.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,22 +74,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mesto-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Yandex practicum\fourth-sprint\mesto" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\components" />
       <recent name="C:\Yandex practicum\fourth-sprint\mesto\src" />
       <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\pages" />
       <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\scripts" />
       <recent name="C:\Yandex practicum\fourth-sprint\mesto\src\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Yandex practicum\fourth-sprint\mesto" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Api.js">
@@ -222,14 +222,36 @@
       <workItem from="1650199260231" duration="6049000" />
       <workItem from="1650205472036" duration="4009000" />
       <workItem from="1650209553002" duration="3467000" />
-      <workItem from="1650213057951" duration="236000" />
-    </task>
-    <task id="LOCAL-00026" summary="auto-test-bugs -- fix">
-      <created>1643751753483</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1643751753483</updated>
+      <workItem from="1650213057951" duration="1727000" />
+      <workItem from="1650220192726" duration="735000" />
+      <workItem from="1650397792126" duration="9000" />
+      <workItem from="1650910049808" duration="1103000" />
+      <workItem from="1651173525448" duration="3396000" />
+      <workItem from="1651184782650" duration="10000" />
+      <workItem from="1651184794172" duration="622000" />
+      <workItem from="1651481568832" duration="32000" />
+      <workItem from="1651481601957" duration="188000" />
+      <workItem from="1651484552617" duration="23000" />
+      <workItem from="1651505248292" duration="1663000" />
+      <workItem from="1651507979222" duration="265000" />
+      <workItem from="1651514670057" duration="122000" />
+      <workItem from="1651529718398" duration="257000" />
+      <workItem from="1651584176305" duration="647000" />
+      <workItem from="1651587348017" duration="1108000" />
+      <workItem from="1651611396542" duration="158000" />
+      <workItem from="1652201609869" duration="656000" />
+      <workItem from="1652203429373" duration="176000" />
+      <workItem from="1652302269284" duration="1121000" />
+      <workItem from="1652303421594" duration="38000" />
+      <workItem from="1652303966629" duration="137000" />
+      <workItem from="1652305678631" duration="446000" />
+      <workItem from="1652603550819" duration="9000" />
+      <workItem from="1652603568817" duration="46000" />
+      <workItem from="1652611011173" duration="42000" />
+      <workItem from="1652612924923" duration="2495000" />
+      <workItem from="1652637969750" duration="1160000" />
+      <workItem from="1652641604985" duration="623000" />
+      <workItem from="1655317685440" duration="745000" />
     </task>
     <task id="LOCAL-00027" summary="review fix">
       <created>1643778844021</created>
@@ -567,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650203975166</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="add popupwithconfirm">
+      <created>1650213325901</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1650213325911</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +627,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix button" />
     <MESSAGE value="fix 1-st review" />
     <MESSAGE value="popups closest" />
     <MESSAGE value="fix popup overlay" />
@@ -623,18 +651,14 @@
     <MESSAGE value="100%" />
     <MESSAGE value="auto-test" />
     <MESSAGE value="review fix-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="review fix-1" />
+    <MESSAGE value="add popupwithconfirm" />
+    <option name="LAST_COMMIT_MESSAGE" value="add popupwithconfirm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1249" y="330" key="#Custom_Plugin_Repositories" timestamp="1647378084663">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
     <state x="-1249" y="330" key="#Custom_Plugin_Repositories/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1647378084663" />
-    <state x="839" y="412" key="#Custom_Plugin_Repositories/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1644258685530" />
-    <state x="714" y="340" key="#Notifications" timestamp="1643652610930">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="714" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643652610930" />
     <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1650191021275">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -643,11 +667,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="92" y="92" width="1736" height="848" key="DiffContextDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1648160370872" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1650212142832">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1652603613363">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="-1328" y="217" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1650126350697" />
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650212142832" />
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1652603613363" />
     <state x="817" y="416" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1647380909013">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -677,23 +701,18 @@
     </state>
     <state x="-1551" y="117" key="SettingsEditor/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1647378125523" />
     <state x="461" y="161" key="SettingsEditor/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1647378024242" />
-    <state x="807" y="429" key="VCS.ChangelistChooser" timestamp="1643500837171">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="807" y="429" key="VCS.ChangelistChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1643500837171" />
     <state x="846" y="430" key="VCS.EditChangelistDialog" timestamp="1650204003561">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="846" y="430" key="VCS.EditChangelistDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650204003561" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650204012046">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1650213329601">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="-1478" y="199" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1643402366937" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650204012046" />
-    <state x="-1418" y="203" key="run.anything.popup" timestamp="1642363194005">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1650213329601" />
+    <state x="-1920" y="0" width="1550" height="880" key="dock-window-1" timestamp="1655318149316">
       <screen x="-1920" y="0" width="1536" height="826" />
     </state>
-    <state x="-1418" y="203" key="run.anything.popup/-1920.0.1536.826/0.0.1920.1032@-1920.0.1536.826" timestamp="1642363194005" />
+    <state x="-1920" y="0" width="1550" height="880" key="dock-window-1/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1655318149316" />
     <state x="616" y="353" width="672" height="678" key="search.everywhere.popup" timestamp="1650204960761">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

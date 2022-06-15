@@ -66,6 +66,9 @@ Promise.all([api.getProfile(), api.getInitialCards()])
         console.log('Error', err);
     });
 
+
+
+
 const createCard = (data) => {
     const card = new Card(
         data,

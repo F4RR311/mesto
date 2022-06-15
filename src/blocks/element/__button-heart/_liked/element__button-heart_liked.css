@@ -5,5 +5,7 @@
 
 }
 .element__button-heart_liked:hover{
+    cursor: pointer;
     opacity: 0.5;
+    transition: opacity 0.8s ease;
 }
